@@ -166,7 +166,7 @@ git push                                   # main に push できなければ cl
 
 | パス | 内容 |
 |---|---|
-| `index.html`, `assets/app.js`, `assets/style.css` | ダッシュボード（Leaflet の地図・Chart.js のグラフ・一覧） |
+| `index.html`, `assets/app.js`, `assets/style.css` | ダッシュボード。`#map`（Leaflet の地図＋一覧＋詳細パネル）／`#market`（相場・Chart.js）／`#report`（`data/reports/YYYY-MM-DD.md` を日付ごとに表示）の3画面 |
 | `assets/vendor/` | Leaflet 1.9.4 / Chart.js 4.5（同梱。CDN不要） |
 | `data/config.json` | 条件・候補エリア（町の代表点）・駅・リンク |
 | `data/listings.json` | 掲載中の物件、掲載終了、土地、サマリー |
