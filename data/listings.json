@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-25T23:00:00+09:00",
-  "summary": "初期データ（9/25の手動調査分）。条件合致2件：東小松川2丁目（121㎡・4LDK・7,299万円）と大杉3丁目（113㎡・3SLDK・6,180万円）。翌日以降は日次ルーチンが自動更新します。",
+  "updated_at": "2026-09-25T23:50:00+09:00",
+  "summary": "条件合致3件（新着：大杉3丁目2号棟 5,780万円・110㎡・3SLDK・駐車場2台）。惜しい物件で第一候補エリアの江戸川1丁目（115㎡・4LDK・駐車場付き・価格が80万円超過のみ）が新着。下篠崎町のKEIAI GRACEは個別ページで価格を5,398万円に修正（従来表示5,598万円から再確認）。",
   "source_status": {
     "LIFULL HOME'S": "ok",
-    "アットホーム": "not_checked",
+    "アットホーム": "ok",
     "三井のリハウス": "ok",
     "東急リバブル": "ok",
     "住宅情報館": "ok",
-    "SUUMO": "not_checked"
+    "SUUMO": "ok"
   },
   "listings": [
     {
@@ -99,6 +99,14 @@
         {
           "site": "東急リバブル",
           "url": "https://www.livable.co.jp/kounyu/kodate/tokyo/s2353200/"
+        },
+        {
+          "site": "三井のリハウス",
+          "url": "https://www.rehouse.co.jp/buy/s_kodate/prefecture/13/railway/2353/station/200/"
+        },
+        {
+          "site": "住宅情報館",
+          "url": "https://www.jutakujohokan.co.jp/contents/search_line/house/new/toeishinjuku-line/shinozaki-st"
         }
       ],
       "status": "near",
@@ -196,7 +204,7 @@
       "building_m2": 108.36,
       "land_m2": 84.65,
       "layout": "4LDK",
-      "parking": "不明",
+      "parking": "あり",
       "access": "JR総武線 小岩駅 徒歩17分",
       "bus": null,
       "completion": "新築",
@@ -217,7 +225,7 @@
         }
       ],
       "active": true,
-      "note": "延床が110㎡にわずかに届かず",
+      "note": "延床が110㎡にわずかに届かず。駐車場ありを確認",
       "missed": 0
     },
     {
@@ -227,18 +235,26 @@
       "zone": "first",
       "lat": 35.698635,
       "lng": 139.913254,
-      "price_man": 5598,
+      "price_man": 5398,
       "building_m2": 104.09,
       "land_m2": 69.79,
-      "layout": "2SLDK",
-      "parking": "不明",
-      "access": "都営新宿線 篠崎駅 徒歩17分",
+      "layout": "2LDK+S（納戸）",
+      "parking": "1台（ビルトインガレージ）",
+      "access": "都営新宿線 篠崎駅 徒歩17〜19分",
       "bus": null,
-      "completion": "新築",
+      "completion": "2026年5月",
       "sources": [
         {
           "site": "三井のリハウス",
           "url": "https://www.rehouse.co.jp/buy/s_kodate/prefecture/13/railway/2353/station/200/"
+        },
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-17067100002297/"
+        },
+        {
+          "site": "住宅情報館",
+          "url": "https://www.jutakujohokan.co.jp/contents/search_line/house/new/toeishinjuku-line/shinozaki-st"
         }
       ],
       "status": "reference",
@@ -248,11 +264,11 @@
       "price_history": [
         {
           "date": "2026-09-25",
-          "price_man": 5598
+          "price_man": 5398
         }
       ],
       "active": true,
-      "note": "第一候補エリア。延床・間取りが不足",
+      "note": "第一候補エリア。延床・間取りが不足。価格はサイトにより5,398万円〜5,598万円のばらつきあり、ホームズ個別ページに基づき5,398万円に更新。駐車場はビルトインガレージ1台",
       "missed": 0
     },
     {
@@ -404,7 +420,7 @@
       "lng": 139.861069,
       "price_man": 8680,
       "building_m2": 122.31,
-      "land_m2": null,
+      "land_m2": 72.02,
       "layout": "3SLDK",
       "parking": "不明",
       "access": "東京メトロ東西線 西葛西駅",
@@ -428,6 +444,228 @@
       ],
       "active": true,
       "note": "予算外",
+      "missed": 0
+    },
+    {
+      "id": "edogawa1-115",
+      "address": "東京都江戸川区江戸川1丁目",
+      "town": "江戸川",
+      "zone": "first",
+      "lat": 35.688538,
+      "lng": 139.90593,
+      "price_man": 7580,
+      "building_m2": 115.01,
+      "land_m2": 82.2,
+      "layout": "4LDK",
+      "parking": "1台（ビルトインガレージ）",
+      "access": "都営新宿線 瑞江駅 徒歩13分",
+      "bus": null,
+      "completion": "2026年10月予定",
+      "sources": [
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-17086370000138/"
+        }
+      ],
+      "status": "near",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 7580
+        }
+      ],
+      "active": true,
+      "note": "第一候補エリア。価格が7,500万円を80万円超過するのみで他条件は良好。バス代替：南行徳駅バス17分・小岩駅バス28分",
+      "missed": 0
+    },
+    {
+      "id": "osugi3-110",
+      "address": "東京都江戸川区大杉3丁目",
+      "town": "大杉",
+      "zone": "reserve",
+      "lat": 35.705537,
+      "lng": 139.882568,
+      "price_man": 5780,
+      "building_m2": 110.35,
+      "land_m2": 100.38,
+      "layout": "3SLDK",
+      "parking": "2台",
+      "access": "都営新宿線 一之江駅 バス6分＋徒歩5分（一之江橋西詰停留所）",
+      "bus": null,
+      "completion": "2026年9月予定",
+      "sources": [
+        {
+          "site": "三井のリハウス",
+          "url": "https://www.rehouse.co.jp/buy/kodate/prefecture/13/city/13123/"
+        },
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-17086370000008/"
+        }
+      ],
+      "status": "match",
+      "grade": "○",
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 5780
+        }
+      ],
+      "active": true,
+      "note": "1号棟（osugi3-113）と同一分譲地の2号棟。土地100㎡超と広め。駐車場2台",
+      "missed": 0
+    },
+    {
+      "id": "higashikomatsugawa2-104",
+      "address": "東京都江戸川区東小松川2丁目",
+      "town": "東小松川",
+      "zone": "reserve",
+      "lat": 35.695895,
+      "lng": 139.864863,
+      "price_man": 5890,
+      "building_m2": 104.08,
+      "land_m2": 62.63,
+      "layout": "4LDK",
+      "parking": "1台",
+      "access": "都営新宿線 船堀駅 バス7分＋徒歩4分／一之江駅 徒歩29分／新小岩駅 徒歩35分",
+      "bus": null,
+      "completion": "2026年7月",
+      "sources": [
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-17060170010975/"
+        }
+      ],
+      "status": "near",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 5890
+        }
+      ],
+      "active": true,
+      "note": "延床が110㎡にわずかに届かず。価格・駐車場は好条件",
+      "missed": 0
+    },
+    {
+      "id": "kamiisshiki2-102",
+      "address": "東京都江戸川区上一色2丁目",
+      "town": "上一色",
+      "zone": "other",
+      "lat": 35.725883,
+      "lng": 139.874557,
+      "price_man": 6790,
+      "building_m2": 102.07,
+      "land_m2": 90.05,
+      "layout": "4LDK",
+      "parking": "1台（車種制限あり）",
+      "access": "JR総武線 小岩駅 徒歩18分／新小岩駅 バス8分＋徒歩5分（上一色コミュニティセンター前）",
+      "bus": null,
+      "completion": "2026年12月予定",
+      "sources": [
+        {
+          "site": "三井のリハウス",
+          "url": "https://www.rehouse.co.jp/buy/s_kodate/bkdetail/FQ8BGA60/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/tokyo/edogawa-city/list/"
+        }
+      ],
+      "status": "near",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 6790
+        }
+      ],
+      "active": true,
+      "note": "候補エリア外だが好条件のため掲載。延床が110㎡にわずかに届かず",
+      "missed": 0
+    },
+    {
+      "id": "ichinoe3-108",
+      "address": "東京都江戸川区一之江3丁目",
+      "town": "一之江",
+      "zone": "other",
+      "lat": 35.688717,
+      "lng": 139.884537,
+      "price_man": 7680,
+      "building_m2": 108.54,
+      "land_m2": 80.41,
+      "layout": "4LDK",
+      "parking": "2台（車種・サイズ制限あり）",
+      "access": "都営新宿線 一之江駅 徒歩7分",
+      "bus": null,
+      "completion": "2026年10月中旬予定",
+      "sources": [
+        {
+          "site": "三井のリハウス",
+          "url": "https://www.rehouse.co.jp/buy/s_kodate/bkdetail/FU1BGA89/"
+        },
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-17067100002174/"
+        }
+      ],
+      "status": "reference",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 7680
+        }
+      ],
+      "active": true,
+      "note": "参考物件。延床（108.54㎡）と価格（7,680万円）の両方が基準からやや外れる",
+      "missed": 0
+    },
+    {
+      "id": "harue5-108",
+      "address": "東京都江戸川区春江町5丁目",
+      "town": "春江町",
+      "zone": "reserve",
+      "lat": 35.67952,
+      "lng": 139.875137,
+      "price_man": 8980,
+      "building_m2": 108.94,
+      "land_m2": 104.29,
+      "layout": "4LDK",
+      "parking": "あり",
+      "access": "不明",
+      "bus": null,
+      "completion": "不明",
+      "sources": [
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-17086370000132/"
+        }
+      ],
+      "status": "reference",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 8980
+        }
+      ],
+      "active": true,
+      "note": "参考物件。価格が予算を大幅に超過",
       "missed": 0
     }
   ],
