@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>江戸川区 新築戸建てウォッチ</title>
+<meta name="description" content="江戸川区の新築一戸建て（4LDK・延床110㎡以上・駐車場付き）を毎日追跡するダッシュボード">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/vendor/leaflet.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <p class="eyebrow">毎日自動更新</p>
+      <h1>江戸川区 新築戸建てウォッチ</h1>
+      <p class="crit" id="criteria"></p>
+    </div>
+    <div class="updated">
+      <span class="muted">最終更新</span>
+      <strong id="updated">—</strong>
+    </div>
+  </header>
+
+  <section class="summary card" id="summary-card">
+    <h2 class="sr">今日のサマリー</h2>
+    <p id="summary">読み込み中…</p>
+    <ul class="sources" id="source-status"></ul>
+  </section>
+
+  <section class="kpis" id="kpis" aria-label="主要指標"></section>
+
+  <div class="filters" role="group" aria-label="絞り込み">
+    <div class="chips" id="status-chips"></div>
+    <label class="select">
+      <span>エリア</span>
+      <select id="zone-filter">
+        <option value="all">すべて</option>
+      </select>
+    </label>
+  </div>
+
+  <section class="card map-card">
+    <div class="card-head">
+      <h2>地図</h2>
+      <div class="layer-toggles">
+        <label><input type="checkbox" id="lyr-zones" checked> 候補エリア</label>
+        <label><input type="checkbox" id="lyr-flood"> 洪水浸水想定</label>
+        <label><input type="checkbox" id="lyr-tide"> 高潮浸水想定</label>
+      </div>
+    </div>
+    <div id="map" role="region" aria-label="物件の地図"></div>
+    <p class="note" id="hazard-note" hidden>浸水想定は国土交通省「重ねるハザードマップ」のタイル（想定最大規模）。色が濃いほど深い想定です。正確な深さは区のハザードマップで確認してください。</p>
+  </section>
+
+  <section class="grid2">
+    <div class="card">
+      <div class="card-head">
+        <h2>価格 × 延床面積</h2>
+        <span class="muted small">青い帯＝無理のない価格帯、線＝上限 7,500万円・延床110/120㎡</span>
+      </div>
+      <div class="chart-box"><canvas id="chart-scatter" aria-label="価格と延床面積の散布図"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>エリア別の掲載数</h2>
+        <span class="muted small">条件合致・惜しい・参考の内訳</span>
+      </div>
+      <div class="chart-box"><canvas id="chart-zones" aria-label="エリア別の掲載数"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>掲載数の推移</h2>
+        <span class="muted small">日次</span>
+      </div>
+      <div class="chart-box"><canvas id="chart-count" aria-label="掲載数の推移"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h2>㎡単価（中央値）の推移</h2>
+        <span class="muted small">掲載中の全物件・万円/㎡</span>
+      </div>
+      <div class="chart-box"><canvas id="chart-unit" aria-label="㎡単価の推移"></canvas></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>物件一覧</h2>
+      <span class="muted small" id="list-count"></span>
+    </div>
+    <div class="table-wrap">
+      <table id="table">
+        <thead>
+          <tr>
+            <th data-sort="status">判定</th>
+            <th data-sort="address">所在地</th>
+            <th data-sort="price_man" class="num">価格</th>
+            <th data-sort="building_m2" class="num">延床</th>
+            <th data-sort="land_m2" class="num">土地</th>
+            <th data-sort="layout">間取り</th>
+            <th>交通</th>
+            <th>駐車場</th>
+            <th data-sort="first_seen">初掲載</th>
+            <th>掲載</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="note">判定：◎＝6,000〜7,000万円かつ延床120㎡以上／○＝妥協1つ（価格7,000〜7,500万円 または 延床110〜120㎡）／△＝妥協2つ。「惜しい」は条件をわずかに外れる物件。</p>
+  </section>
+
+  <section class="grid2">
+    <div class="card" id="ended-card">
+      <div class="card-head"><h2>掲載終了</h2></div>
+      <ul class="plain" id="ended"></ul>
+    </div>
+    <div class="card" id="land-card">
+      <div class="card-head"><h2>参考：注文住宅向けの土地</h2></div>
+      <ul class="plain" id="land"></ul>
+    </div>
+  </section>
+
+  <section class="grid2">
+    <div class="card">
+      <div class="card-head"><h2>返済シミュレーション</h2><span class="muted small">35年・元利均等</span></div>
+      <div class="calc">
+        <label>借入額（万円）<input type="number" id="calc-loan" value="6500" step="100" min="0"></label>
+        <label>金利（%）<input type="number" id="calc-rate" value="1.3" step="0.05" min="0"></label>
+        <label>期間（年）<input type="number" id="calc-years" value="35" step="1" min="1" max="50"></label>
+      </div>
+      <p class="calc-out">月々 <strong id="calc-monthly">—</strong> ／ 総返済 <span id="calc-total">—</span></p>
+      <p class="note">金利2.5%・3.5%時：<span id="calc-stress"></span></p>
+    </div>
+    <div class="card">
+      <div class="card-head"><h2>最新レポート</h2><a class="small" id="report-link" href="#">全文</a></div>
+      <div class="report" id="report">—</div>
+    </div>
+  </section>
+
+  <footer>
+    <ul class="plain links" id="links"></ul>
+    <p class="muted small">データは各不動産サイトの掲載情報をもとに毎日自動収集しています。成約済み・情報の誤りを含む可能性があるため、必ず掲載元で確認してください。地図：<a href="https://maps.gsi.go.jp/development/ichiran.html">地理院タイル</a>、浸水想定：<a href="https://disaportal.gsi.go.jp/">ハザードマップポータルサイト</a>。</p>
+  </footer>
+</div>
+
+<div class="tooltip" id="tip" role="tooltip" hidden></div>
+<script src="assets/vendor/leaflet.js"></script>
+<script src="assets/vendor/chart.umd.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

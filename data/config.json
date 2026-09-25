@@ -1,0 +1,63 @@
+{
+  "title": "江戸川区 新築戸建てウォッチ",
+  "criteria": {
+    "type": "新築一戸建て",
+    "layout": "4LDK以上 または 3LDK＋納戸（3SLDK等）",
+    "parking": "1台以上（屋根付きは加点）",
+    "price_max_man": 7500,
+    "price_comfort_man": [6000, 7000],
+    "building_min_m2": 110,
+    "building_ideal_m2": 120,
+    "station_distance": "考慮しない（バス便可）。バス本数の多さを重視"
+  },
+  "zones": [
+    {
+      "id": "first",
+      "label": "第一候補：篠崎街道沿い",
+      "note": "京成バス 小72（瑞江駅〜篠崎駅〜小岩駅・区内京成バス最多便）と 新小71（新小岩駅〜鹿骨〜篠崎駅〜瑞江駅・深夜バスあり）が重なる",
+      "towns": [
+        {"name": "下篠崎町", "lat": 35.698635, "lng": 139.913254},
+        {"name": "上篠崎", "lat": 35.711742, "lng": 139.905197},
+        {"name": "南篠崎町", "lat": 35.695293, "lng": 139.900299},
+        {"name": "篠崎町", "lat": 35.704903, "lng": 139.902069},
+        {"name": "江戸川", "lat": 35.684483, "lng": 139.892776}
+      ]
+    },
+    {
+      "id": "second",
+      "label": "第二候補：鹿骨",
+      "note": "新小71で新小岩駅（JR総武快速）へ直行。土地100㎡前後が出やすい",
+      "towns": [
+        {"name": "鹿骨2丁目", "lat": 35.7071, "lng": 139.893372},
+        {"name": "鹿骨5丁目", "lat": 35.714806, "lng": 139.886322}
+      ]
+    },
+    {
+      "id": "reserve",
+      "label": "予備：瑞江・一之江・船堀・新小岩のバス便エリア",
+      "note": "120㎡級の実例あり。バス本数は要確認",
+      "towns": [
+        {"name": "春江町", "lat": 35.699917, "lng": 139.888901},
+        {"name": "東瑞江", "lat": 35.687008, "lng": 139.896927},
+        {"name": "西瑞江", "lat": 35.682232, "lng": 139.884186},
+        {"name": "一之江町", "lat": 35.683643, "lng": 139.873352},
+        {"name": "大杉", "lat": 35.704937, "lng": 139.882568},
+        {"name": "東小松川", "lat": 35.696495, "lng": 139.865463},
+        {"name": "本一色", "lat": 35.718384, "lng": 139.873886}
+      ]
+    }
+  ],
+  "stations": [
+    {"name": "篠崎", "line": "都営新宿線", "lat": 35.7062, "lng": 139.9035},
+    {"name": "瑞江", "line": "都営新宿線", "lat": 35.6932, "lng": 139.8976},
+    {"name": "一之江", "line": "都営新宿線", "lat": 35.6863, "lng": 139.8830},
+    {"name": "船堀", "line": "都営新宿線", "lat": 35.6838, "lng": 139.8641},
+    {"name": "小岩", "line": "JR総武線", "lat": 35.7331, "lng": 139.8823},
+    {"name": "新小岩", "line": "JR総武線", "lat": 35.7169, "lng": 139.8580}
+  ],
+  "links": [
+    {"label": "江戸川区 水害ハザードマップ（第2版）", "url": "https://www.city.edogawa.tokyo.jp/e007/bosaianzen/bosai/kanrenmap/hazardmap/index.html"},
+    {"label": "京成バス 江戸川区路線図", "url": "https://www.keiseibus.co.jp/wp-content/uploads/2026/03/routemap-edogawa2604.pdf"},
+    {"label": "LIFULL HOME'S 江戸川区 新築一戸建て", "url": "https://www.homes.co.jp/kodate/shinchiku/tokyo/edogawa-city/list/"}
+  ]
+}

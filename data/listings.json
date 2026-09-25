@@ -1,0 +1,436 @@
+{
+  "updated_at": "2026-09-25T23:00:00+09:00",
+  "summary": "初期データ（9/25の手動調査分）。条件合致2件：東小松川2丁目（121㎡・4LDK・7,299万円）と大杉3丁目（113㎡・3SLDK・6,180万円）。翌日以降は日次ルーチンが自動更新します。",
+  "source_status": {
+    "LIFULL HOME'S": "ok",
+    "アットホーム": "not_checked",
+    "三井のリハウス": "ok",
+    "東急リバブル": "ok",
+    "住宅情報館": "ok",
+    "SUUMO": "not_checked"
+  },
+  "listings": [
+    {
+      "id": "higashikomatsugawa2-121",
+      "address": "東京都江戸川区東小松川2丁目",
+      "town": "東小松川",
+      "zone": "reserve",
+      "lat": 35.696495,
+      "lng": 139.865463,
+      "price_man": 7299,
+      "building_m2": 121.29,
+      "land_m2": 77.07,
+      "layout": "4LDK",
+      "parking": "不明",
+      "access": "JR総武線 新小岩駅 バス14分",
+      "bus": null,
+      "completion": "2027年",
+      "sources": [
+        {
+          "site": "東急リバブル",
+          "url": "https://www.livable.co.jp/kounyu/kodate/tokyo/a13123/"
+        }
+      ],
+      "status": "match",
+      "grade": "○",
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 7299
+        }
+      ],
+      "active": true,
+      "note": "延床・間取りは条件ぴったり。価格は上限付近。駐車場要確認",
+      "missed": 0
+    },
+    {
+      "id": "osugi3-113",
+      "address": "東京都江戸川区大杉3丁目",
+      "town": "大杉",
+      "zone": "reserve",
+      "lat": 35.704937,
+      "lng": 139.882568,
+      "price_man": 6180,
+      "building_m2": 112.99,
+      "land_m2": 84.9,
+      "layout": "3SLDK",
+      "parking": "不明",
+      "access": "都営新宿線 一之江駅 バス7分",
+      "bus": null,
+      "completion": "新築",
+      "sources": [
+        {
+          "site": "三井のリハウス",
+          "url": "https://www.rehouse.co.jp/buy/kodate/prefecture/13/city/13123/"
+        }
+      ],
+      "status": "match",
+      "grade": "○",
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 6180
+        }
+      ],
+      "active": true,
+      "note": "価格は無理のない範囲。延床は110〜120㎡。駐車場要確認",
+      "missed": 0
+    },
+    {
+      "id": "shishibone2-109",
+      "address": "東京都江戸川区鹿骨2丁目",
+      "town": "鹿骨",
+      "zone": "second",
+      "lat": 35.7071,
+      "lng": 139.893372,
+      "price_man": 7499,
+      "building_m2": 109.04,
+      "land_m2": 102.62,
+      "layout": "3LDK",
+      "parking": "不明",
+      "access": "都営新宿線 篠崎駅 徒歩15分",
+      "bus": null,
+      "completion": "2026年8月",
+      "sources": [
+        {
+          "site": "東急リバブル",
+          "url": "https://www.livable.co.jp/kounyu/kodate/tokyo/s2353200/"
+        }
+      ],
+      "status": "near",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 7499
+        }
+      ],
+      "active": true,
+      "note": "土地103㎡と広め。延床110㎡・4LDKにわずかに届かず",
+      "missed": 0
+    },
+    {
+      "id": "harue2-134",
+      "address": "東京都江戸川区春江町2丁目",
+      "town": "春江町",
+      "zone": "reserve",
+      "lat": 35.699917,
+      "lng": 139.888901,
+      "price_man": 7698,
+      "building_m2": 134.16,
+      "land_m2": 85.57,
+      "layout": "5LDK",
+      "parking": "不明",
+      "access": "都営新宿線 瑞江駅 徒歩20分",
+      "bus": null,
+      "completion": "2027年2月予定",
+      "sources": [
+        {
+          "site": "三井のリハウス",
+          "url": "https://www.rehouse.co.jp/buy/kodate/prefecture/13/city/13123/"
+        }
+      ],
+      "status": "near",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 7698
+        }
+      ],
+      "active": true,
+      "note": "広さは十分。価格が上限を約200万円超過",
+      "missed": 0
+    },
+    {
+      "id": "higashikomatsugawa2-106",
+      "address": "東京都江戸川区東小松川2丁目",
+      "town": "東小松川",
+      "zone": "reserve",
+      "lat": 35.6971,
+      "lng": 139.8662,
+      "price_man": 6180,
+      "building_m2": 106.15,
+      "land_m2": 61.13,
+      "layout": "3LDK+納戸",
+      "parking": "不明",
+      "access": "都営新宿線 船堀駅 バス11分",
+      "bus": null,
+      "completion": "2027年",
+      "sources": [
+        {
+          "site": "東急リバブル",
+          "url": "https://www.livable.co.jp/kounyu/kodate/tokyo/a13123/"
+        }
+      ],
+      "status": "near",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 6180
+        }
+      ],
+      "active": true,
+      "note": "延床が110㎡未満",
+      "missed": 0
+    },
+    {
+      "id": "minamikoiwa2-108",
+      "address": "東京都江戸川区南小岩2丁目",
+      "town": "南小岩",
+      "zone": "other",
+      "lat": 35.720005,
+      "lng": 139.88945,
+      "price_man": 6699,
+      "building_m2": 108.36,
+      "land_m2": 84.65,
+      "layout": "4LDK",
+      "parking": "不明",
+      "access": "JR総武線 小岩駅 徒歩17分",
+      "bus": null,
+      "completion": "新築",
+      "sources": [
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/shinchiku/tokyo/edogawa-city/list/"
+        }
+      ],
+      "status": "near",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 6699
+        }
+      ],
+      "active": true,
+      "note": "延床が110㎡にわずかに届かず",
+      "missed": 0
+    },
+    {
+      "id": "shimoshinozaki-104",
+      "address": "東京都江戸川区下篠崎町",
+      "town": "下篠崎町",
+      "zone": "first",
+      "lat": 35.698635,
+      "lng": 139.913254,
+      "price_man": 5598,
+      "building_m2": 104.09,
+      "land_m2": 69.79,
+      "layout": "2SLDK",
+      "parking": "不明",
+      "access": "都営新宿線 篠崎駅 徒歩17分",
+      "bus": null,
+      "completion": "新築",
+      "sources": [
+        {
+          "site": "三井のリハウス",
+          "url": "https://www.rehouse.co.jp/buy/s_kodate/prefecture/13/railway/2353/station/200/"
+        }
+      ],
+      "status": "reference",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 5598
+        }
+      ],
+      "active": true,
+      "note": "第一候補エリア。延床・間取りが不足",
+      "missed": 0
+    },
+    {
+      "id": "shinozaki7-128",
+      "address": "東京都江戸川区篠崎町7丁目",
+      "town": "篠崎町",
+      "zone": "first",
+      "lat": 35.704903,
+      "lng": 139.902069,
+      "price_man": 9499,
+      "building_m2": 128.84,
+      "land_m2": 77.74,
+      "layout": "3LDK+納戸",
+      "parking": "不明",
+      "access": "都営新宿線 篠崎駅 徒歩4分",
+      "bus": null,
+      "completion": "2026年11月",
+      "sources": [
+        {
+          "site": "東急リバブル",
+          "url": "https://www.livable.co.jp/kounyu/kodate/tokyo/s2353200/"
+        }
+      ],
+      "status": "reference",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 9499
+        }
+      ],
+      "active": true,
+      "note": "駅近のため予算外",
+      "missed": 0
+    },
+    {
+      "id": "matsushima2-125",
+      "address": "東京都江戸川区松島2丁目",
+      "town": "松島",
+      "zone": "other",
+      "lat": 35.70591,
+      "lng": 139.859421,
+      "price_man": 8999,
+      "building_m2": 125.8,
+      "land_m2": 74.29,
+      "layout": "3LDK",
+      "parking": "不明",
+      "access": "JR総武線 新小岩駅 徒歩15分",
+      "bus": null,
+      "completion": "2026年10月予定",
+      "sources": [
+        {
+          "site": "三井のリハウス",
+          "url": "https://www.rehouse.co.jp/buy/kodate/prefecture/13/city/13123/"
+        }
+      ],
+      "status": "reference",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 8999
+        }
+      ],
+      "active": true,
+      "note": "予算外",
+      "missed": 0
+    },
+    {
+      "id": "minamikasai2-124",
+      "address": "東京都江戸川区南葛西2丁目",
+      "town": "南葛西",
+      "zone": "other",
+      "lat": 35.653767,
+      "lng": 139.874939,
+      "price_man": 8599,
+      "building_m2": 124.2,
+      "land_m2": 70.01,
+      "layout": "3SLDK",
+      "parking": "不明",
+      "access": "東京メトロ東西線 葛西駅 徒歩13分",
+      "bus": null,
+      "completion": "新築",
+      "sources": [
+        {
+          "site": "三井のリハウス",
+          "url": "https://www.rehouse.co.jp/buy/kodate/prefecture/13/city/13123/"
+        }
+      ],
+      "status": "reference",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 8599
+        }
+      ],
+      "active": true,
+      "note": "予算外",
+      "missed": 0
+    },
+    {
+      "id": "higashikasai1-100",
+      "address": "東京都江戸川区東葛西1丁目",
+      "town": "東葛西",
+      "zone": "other",
+      "lat": 35.670967,
+      "lng": 139.879929,
+      "price_man": 8350,
+      "building_m2": 100.6,
+      "land_m2": 121.41,
+      "layout": "4LDK",
+      "parking": "不明",
+      "access": "東京メトロ東西線 葛西駅 徒歩20分",
+      "bus": null,
+      "completion": "2026年",
+      "sources": [
+        {
+          "site": "東急リバブル",
+          "url": "https://www.livable.co.jp/kounyu/kodate/tokyo/a13123/"
+        }
+      ],
+      "status": "reference",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 8350
+        }
+      ],
+      "active": true,
+      "note": "予算外・延床不足",
+      "missed": 0
+    },
+    {
+      "id": "nishikasai8-122",
+      "address": "東京都江戸川区西葛西8丁目",
+      "town": "西葛西",
+      "zone": "other",
+      "lat": 35.656258,
+      "lng": 139.861069,
+      "price_man": 8680,
+      "building_m2": 122.31,
+      "land_m2": null,
+      "layout": "3SLDK",
+      "parking": "不明",
+      "access": "東京メトロ東西線 西葛西駅",
+      "bus": null,
+      "completion": "新築",
+      "sources": [
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/shinchiku/tokyo/edogawa-city/list/"
+        }
+      ],
+      "status": "reference",
+      "grade": null,
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "price_history": [
+        {
+          "date": "2026-09-25",
+          "price_man": 8680
+        }
+      ],
+      "active": true,
+      "note": "予算外",
+      "missed": 0
+    }
+  ],
+  "ended": [],
+  "land": []
+}
