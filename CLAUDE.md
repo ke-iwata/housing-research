@@ -68,6 +68,7 @@ Claude Code のルーチンから「CLAUDE.md の日次更新ルーチンを実�
 - WebFetch は 404 になりがち。WebSearch（`allowed_domains: ["suumo.jp"]`）で町名＋新築一戸建てを検索し、個別物件が拾えれば使う
 
 **ルール**
+- `sources[].url` は**必ず物件の詳細ページのURL**にする（例：`https://www.homes.co.jp/kodate/b-…/`、`https://www.rehouse.co.jp/buy/s_kodate/bkdetail/…/`、`https://www.livable.co.jp/kodate/C…/`）。一覧・検索ページのURLは不可（`scripts/update_history.py` がエラーにする）。一覧ページで詳細URLが分からないときは、WebFetch で「各物件の詳細ページのhrefをそのまま返して」と頼み、そのURLを WebFetch して所在地・価格が一致することを確認してから使う
 - 取得できない項目は `null` または `"不明"`。推測で埋めない
 - 同じ物件（所在地・価格・延床が一致）が複数サイトにあれば1件にまとめ、`sources` に併記する
 - `data/listings.json` の `source_status` に、サイトごとの結果を `"ok"` / `"failed"` / `"not_checked"` で記録する
@@ -88,6 +89,7 @@ https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都江戸川区�
 
 今日の日付を D（Asia/Tokyo、`YYYY-MM-DD`）とする。
 
+- 駐車場が「なし」の物件は対象外（`reference` にして note に「駐車場なし」）
 - **今回見つかった既存物件**：`last_seen = D`、`missed = 0`。価格が変わっていたら `price_man` を更新し、`price_history` に `{"date": D, "price_man": 新価格}` を追加。note に「○/○ 値下げ」などと書く
 - **新しい物件**：`first_seen = last_seen = D`、`price_history = [{"date": D, "price_man": 価格}]`、`active = true`、`missed = 0`
 - **今回見つからなかった物件**：`missed` を +1。`missed >= 2` になったら `listings` から外し、`ended` の末尾に `ended_on = D` を付けて移す（1回の取得失敗で消さないため）
