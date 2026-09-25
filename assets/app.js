@@ -186,7 +186,7 @@
   }
 
   function popupHtml(x) {
-    const src = (x.sources || []).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.site)}</a>`).join("・");
+    const src = (x.sources || []).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">詳細を見る（${esc(s.site)}）↗</a>`).join("<br>");
     return `<div class="pop"><h3>${esc(x.address.replace("東京都江戸川区", ""))} ${x.grade ? `<span class="grade">${x.grade}</span>` : ""}</h3>
       <div class="price">${man(x.price_man)}</div>
       <div>延床 ${m2(x.building_m2)}／土地 ${m2(x.land_m2)}／${esc(x.layout)}</div>
@@ -358,7 +358,7 @@
       const ph = x.price_history || [];
       const prevPrice = ph.length > 1 ? ph[ph.length - 2].price_man : null;
       const pchg = prevPrice != null && prevPrice !== x.price_man ? `<span class="pchg">${prevPrice.toLocaleString()}→${x.price_man.toLocaleString()}万</span>` : "";
-      const src = (x.sources || []).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(s.site)}</a>`).join("<br>");
+      const src = (x.sources || []).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">詳細 ↗<span class="note-line">${esc(s.site)}</span></a>`).join("<br>");
       return `<tr data-id="${esc(x.id)}">
         <td><span class="badge"><span class="dot" style="background:var(${STATUS[x.status].var})"></span>${STATUS[x.status].label}${x.grade ? ` <span class="grade">${x.grade}</span>` : ""}</span></td>
         <td>${esc(x.address.replace("東京都江戸川区", ""))}${x.first_seen === latest ? '<span class="new">NEW</span>' : ""}<span class="note-line">${esc(ZONE_LABEL[x.zone])}${x.note ? "｜" + esc(x.note) : ""}</span></td>

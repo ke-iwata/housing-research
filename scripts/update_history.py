@@ -7,6 +7,7 @@
 エラーがあれば非ゼロで終了する。
 """
 import json
+import re
 import statistics
 import sys
 from datetime import datetime, timedelta, timezone
@@ -31,6 +32,14 @@ def grade(x):
     return "◎○△"[compromises]
 
 
+LIST_URL_PATTERNS = [r"/list/", r"/city/\d+/?$", r"/station/\d+/?$", r"/kodate/tokyo/[as]\d+/?$", r"/search_line/"]
+
+
+def is_detail_url(url):
+    """一覧・検索ページではなく、物件の詳細ページらしいURLか"""
+    return url.startswith("http") and not any(re.search(p, url) for p in LIST_URL_PATTERNS)
+
+
 def validate(data):
     errors = []
     ids = set()
@@ -50,6 +59,9 @@ def validate(data):
             errors.append(f"{where}: price_man は数値（万円）")
         if x.get("building_m2") is not None and not isinstance(x.get("building_m2"), (int, float)):
             errors.append(f"{where}: building_m2 は数値（㎡）")
+        for src in x.get("sources") or []:
+            if not is_detail_url(src.get("url", "")):
+                errors.append(f"{where}: sources の URL が一覧ページです。物件の詳細ページURLにしてください: {src.get('url')}")
         if x.get("lat") is not None and not (35.60 < x["lat"] < 35.78 and 139.82 < x["lng"] < 139.95):
             errors.append(f"{where}: 座標が江戸川区の範囲外です")
         if x.get("status") == "match":
