@@ -46,6 +46,18 @@ Claude Code のルーチンから「CLAUDE.md の日次更新ルーチンを実�
   |---|---|
   | 下篠崎町 | 13C7EB78EB |
   | 篠崎町 | 13C7EB78E9 |
+  | 上篠崎 | 13C7EB797A |
+  | 南篠崎町 | 13C7EB7954 |
+  | 江戸川 | 13C7EB78C4 |
+  | 鹿骨 | 13C7EB78E7 |
+  | 春江町 | 13C7EB7910 |
+  | 東瑞江 | 13C7EB792F |
+  | 西瑞江 | 13C7EB790E |
+  | 瑞江 | 13C7EB7979 |
+  | 一之江 | 13C7EB78C1 |
+  | 大杉 | 13C7EB7974 |
+  | 東小松川 | 13C7EB792D |
+  | 本一色 | 13C7EB7976 |
 
 - 区全体の一覧 `https://www.homes.co.jp/kodate/shinchiku/tokyo/edogawa-city/list/`（`?page=2` 以降でページ送り。1〜3ページ）
 - 条件に合いそうな物件は個別ページ（`https://www.homes.co.jp/kodate/b-…`）を開いて、駐車場・土地面積・間取り・完成時期を確認する
