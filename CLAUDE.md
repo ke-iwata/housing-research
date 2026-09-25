@@ -172,7 +172,9 @@ git push                                   # main に push できなければ cl
 | `data/listings.json` | 掲載中の物件、掲載終了、土地、サマリー |
 | `data/history.json` | 日次の集計（スクリプトが追記） |
 | `data/reports/` | 日次レポート（Markdown） |
+| `data/bus.json` | 候補エリア周辺のバス停・系統と、時間帯別の本数（地図の「バス路線と本数」レイヤーと物件詳細の「近くのバス停」に使う） |
 | `scripts/update_history.py` | 検証・grade計算・集計 |
+| `scripts/build_bus.py` | `data/bus.json` を作る。都営バスは GTFS-JP、京成バスは時刻表を集めた JSON が入力。ダイヤ改正のときだけ実行する（日次ルーチンでは触らない） |
 | `.github/workflows/pages.yml` | claude/** → main マージと Pages デプロイ |
 
 ローカル確認：`python3 -m http.server` を実行して http://localhost:8000 を開く。

@@ -11,9 +11,9 @@
   const LOAN = { rate: 1.3, years: 35 };
   const COLORS = { accent: "#087a58", accentPin: "#12a87a", near: "#ee9b1a", ref: "#b8c1bd", ink: "#14201c", muted: "#67736f", grid: "#eef1ee", blue: "#2f6fe4" };
 
-  const state = { view: "map", filter: "match", onlyNew: false, sort: "price", q: "", sel: null, scope: "all", reportDate: null };
-  let config = {}, data = {}, history = [], latest = null;
-  let map, popup, pinLayer, zoneLayer, stationLayer, floodLayer, tideLayer;
+  const state = { view: "map", filter: "match", onlyNew: false, sort: "price", q: "", sel: null, scope: "all", reportDate: null, busDay: "weekday", busHour: 7 };
+  let config = {}, data = {}, history = [], latest = null, bus = null;
+  let map, popup, pinLayer, zoneLayer, stationLayer, floodLayer, tideLayer, busLayer, busRenderer;
   let mapReady = false, marketDrawn = false, reportDrawn = false;
   const charts = {};
 
@@ -63,10 +63,11 @@
 
   /* ---------- 起動 ---------- */
   async function init() {
-    [config, data, history] = await Promise.all([
+    [config, data, history, bus] = await Promise.all([
       getJSON("data/config.json", {}),
       getJSON("data/listings.json", { listings: [], ended: [], land: [] }),
       getJSON("data/history.json", []),
+      getJSON("data/bus.json", null),
     ]);
     latest = history.length ? history[history.length - 1].date : active().reduce((m, x) => (x.last_seen > m ? x.last_seen : m), "");
     renderHeadstats();
@@ -181,6 +182,9 @@
     });
     toggle("#lyr-zones", zoneLayer);
     toggle("#lyr-stations", stationLayer);
+    // スマホは画面が狭いので、バスの本数レイヤーはレイヤーボタンから表示する
+    if (window.matchMedia("(max-width: 860px)").matches) $("#lyr-bus").checked = false;
+    initBus();
     toggle("#lyr-flood", floodLayer);
     toggle("#lyr-tide", tideLayer);
 
@@ -198,6 +202,108 @@
     map.on("zoomend", declutter);
 
     renderMapView();
+  }
+
+  /* ---------- バス路線と本数 ---------- */
+  const BUS_STEPS = [
+    { min: 15, color: "#163c8f", w: 6.5, label: "15本〜" },
+    { min: 8, color: "#2f6fe4", w: 5, label: "8〜14" },
+    { min: 4, color: "#6aa5f0", w: 3.5, label: "4〜7" },
+    { min: 1, color: "#a9ccf7", w: 2.5, label: "1〜3" },
+    { min: 0, color: "#c4ccd0", w: 1.5, label: "0" },
+  ];
+  const busStep = (n) => BUS_STEPS.find((s) => n >= s.min);
+  const DAY_LABEL = { weekday: "平日", saturday: "土曜", holiday: "日祝" };
+  let busStops = new Map(), busEdges = [];
+
+  function initBus() {
+    if (!bus || !bus.stops) { $("#lyr-bus").closest("label").hidden = true; return; }
+    map.createPane("bus").style.zIndex = 380;
+    busRenderer = L.canvas({ pane: "bus", padding: 0.3 });
+    busLayer = L.layerGroup();
+    bus.stops.forEach((s) => busStops.set(s.id, s));
+    // 同じ区間を通る系統（小72と新小71など）は1本の線にまとめ、本数を合算する
+    const merged = new Map();
+    bus.routes.forEach((r) => r.edges.forEach((e) => {
+      const key = `${r.op}|${e.a}|${e.b}`;
+      const m = merged.get(key) || { a: e.a, b: e.b, op: r.op, routes: [], f: { weekday: Array(24).fill(0), saturday: Array(24).fill(0), holiday: Array(24).fill(0) } };
+      m.routes.push(r.name);
+      Object.keys(m.f).forEach((d) => e.f[d].forEach((v, h) => (m.f[d][h] += v)));
+      merged.set(key, m);
+    }));
+    busEdges = [...merged.values()].filter((e) => busStops.has(e.a) && busStops.has(e.b));
+    $("#bus-scale").innerHTML = [...BUS_STEPS].reverse().map((s) => `<span><i style="background:${s.color}"></i>${s.label}</span>`).join("");
+    $$("#bus-day button").forEach((b) => b.addEventListener("click", () => {
+      state.busDay = b.dataset.day;
+      $$("#bus-day button").forEach((q) => q.setAttribute("aria-pressed", q === b));
+      renderBus();
+    }));
+    $("#bus-hour").addEventListener("input", (e) => { state.busHour = +e.target.value; renderBus(); });
+    const sync = () => {
+      const on = $("#lyr-bus").checked;
+      on ? busLayer.addTo(map) : map.removeLayer(busLayer);
+      $("#buspanel").hidden = !on;
+    };
+    $("#lyr-bus").addEventListener("change", sync);
+    sync();
+    renderBus();
+  }
+
+  function busStopTip(s) {
+    const n = s.h[state.busDay][state.busHour];
+    const am = state.busDay === "weekday" && s.am && s.am.length
+      ? `<table>${s.am.map((a) => `<tr><td>${esc(a.route)}</td><td>${esc(a.dest)}行</td><td class="n">7時 ${a.n[1]}</td><td class="n">8時 ${a.n[2]}</td></tr>`).join("")}</table>` : "";
+    return `<b>${esc(s.name)}</b>　<span style="color:var(--muted)">${s.op === "toei" ? "都営バス" : "京成バス"} · ${esc(s.routes.join("・"))}</span><br>
+      ${DAY_LABEL[state.busDay]} ${state.busHour}時台 <span class="bt-n">${n}</span>本（両方向）${am ? `<br><span style="color:var(--muted)">平日朝の行き先別（片方向ずつ）</span>${am}` : ""}`;
+  }
+
+  function renderBus() {
+    if (!busLayer) return;
+    busLayer.clearLayers();
+    const d = state.busDay, h = state.busHour;
+    $("#bus-hour-label").textContent = `${h}時台`;
+    [...busEdges].sort((p, q) => p.f[d][h] - q.f[d][h]).forEach((e) => {
+      const a = busStops.get(e.a), b = busStops.get(e.b), n = e.f[d][h], st = busStep(n);
+      L.polyline([[a.lat, a.lng], [b.lat, b.lng]], { renderer: busRenderer, color: st.color, weight: st.w, opacity: n ? 0.9 : 0.5, lineCap: "round", dashArray: e.op === "toei" ? "6 6" : null })
+        .bindTooltip(`<b>${esc([...new Set(e.routes)].join("・"))}</b>（${e.op === "toei" ? "都営" : "京成"}）<br>${esc(a.name)} – ${esc(b.name)}<br>${DAY_LABEL[d]} ${h}時台 <span class="bt-n">${n}</span>本（両方向）`, { sticky: true, className: "bus-tip" })
+        .addTo(busLayer);
+    });
+    busStops.forEach((s) => {
+      const n = s.h[d][h], st = busStep(n);
+      L.circleMarker([s.lat, s.lng], { renderer: busRenderer, radius: n >= 15 ? 5.5 : 4.5, color: "#ffffff", weight: 1.5, fillColor: st.color, fillOpacity: 1 })
+        .bindTooltip(busStopTip(s), { className: "bus-tip", direction: "top", offset: [0, -4] })
+        .addTo(busLayer);
+    });
+  }
+
+  // 物件の近くのバス停（物件の座標は丁目の代表点なので距離は目安）
+  function nearStops(x, limit = 3, within = 800) {
+    if (!bus || x.lat == null) return [];
+    const out = [];
+    busStops.forEach((s) => {
+      const m = Math.hypot((s.lat - x.lat) * 111000, (s.lng - x.lng) * 90400);
+      if (m <= within) out.push({ s, m });
+    });
+    out.sort((p, q) => p.m - q.m);
+    const seen = new Set();
+    return out.filter(({ s }) => (seen.has(s.name) ? false : seen.add(s.name))).slice(0, limit);
+  }
+  const busiest = (x) => nearStops(x, 5).sort((p, q) => q.s.h.weekday[7] - p.s.h.weekday[7])[0];
+
+  function nearStopsHtml(x) {
+    const list = nearStops(x);
+    if (!bus) return "";
+    if (!list.length) return `<div class="d-sec"><h3>近くのバス停</h3><p class="d-note">800m以内にデータのあるバス停はありません。</p></div>`;
+    return `<div class="d-sec"><h3>近くのバス停（平日朝・両方向）</h3><div class="near-stops">${list.map(({ s, m }) => {
+      const dest = {};
+      (s.am || []).forEach((a) => { const k = `${a.route} ${a.dest}行`; dest[k] = (dest[k] || 0) + a.n[1] + a.n[2]; });
+      const top = Object.entries(dest).sort((p, q) => q[1] - p[1]).slice(0, 4);
+      return `<div class="ns">
+        <div class="ns-top"><b>${esc(s.name)}</b><span>約${Math.round(m / 10) * 10}m · ${s.op === "toei" ? "都営" : "京成"} ${esc(s.routes.join("・"))}</span></div>
+        <div class="ns-peak"><span><strong>${s.h.weekday[7]}</strong>本 7時台</span><span><strong>${s.h.weekday[8]}</strong>本 8時台</span><span><strong>${s.h.weekday[18]}</strong>本 18時台</span></div>
+        ${top.length ? `<div class="ns-dest">${top.map(([k, v]) => `<span>${esc(k)} <em>${v}</em>本</span>`).join("")}<span style="color:var(--muted)">（7〜8時台）</span></div>` : ""}
+      </div>`;
+    }).join("")}</div><p class="d-note" style="font-size:11px;color:var(--muted)">距離は物件のある丁目の代表点からの直線距離です。</p></div>`;
   }
 
   function renderMapView() {
@@ -286,6 +392,7 @@
       <span class="price">${num(x.price_man)}<small>万円</small></span>
       <span class="pop-line">${esc(x.layout)} · 延床${m2(x.building_m2)} · 土地${m2(x.land_m2)}</span>
       <span class="pop-where">${esc(String(x.access || "").split("／")[0])}</span>
+      ${(() => { const b = busiest(x); return b ? `<span class="pop-bus">バス停「${esc(b.s.name)}」約${Math.round(b.m / 10) * 10}m · 平日7時台 <b>${b.s.h.weekday[7]}本</b></span>` : ""; })()}
       <div class="pop-actions"><button type="button" class="btn primary grow" data-open-detail="${esc(x.id)}">詳細を見る</button></div>
     </div>`;
   }
@@ -338,6 +445,7 @@
           <dt>完成</dt><dd>${esc(x.completion || "要確認")}</dd>
         </dl>
       </div>
+      ${nearStopsHtml(x)}
       ${x.note ? `<div class="d-sec"><h3>メモ</h3><p class="d-note">${esc(x.note)}</p></div>` : ""}
       <div class="d-sec"><h3>価格の推移</h3><div class="phist">${ph.map((p, i) => `<div><span>${mmdd(p.date)} ${i === 0 ? "初掲載" : p.price_man < ph[i - 1].price_man ? "値下げ" : "価格変更"}</span><b>${num(p.price_man)}万円</b></div>`).join("")}</div></div>
       <div class="d-sec checks"><h3>見学前に確認</h3>${CHECKS.map((c, i) => `<label><input type="checkbox" data-check="${i}" ${checked.includes(i) ? "checked" : ""}>${esc(c)}</label>`).join("")}</div>

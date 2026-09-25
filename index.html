@@ -62,10 +62,24 @@
           <span>レイヤー</span>
         </summary>
         <label><input type="checkbox" id="lyr-zones" checked>候補エリア</label>
+        <label><input type="checkbox" id="lyr-bus" checked>バス路線と本数</label>
         <label><input type="checkbox" id="lyr-stations" checked>駅</label>
         <label><input type="checkbox" id="lyr-flood">洪水 浸水想定</label>
         <label><input type="checkbox" id="lyr-tide">高潮 浸水想定</label>
       </details>
+      <div class="float buspanel" id="buspanel" hidden>
+        <div class="bp-head">
+          <span class="float-title">バスの本数</span>
+          <div class="seg seg-xs" id="bus-day" role="group" aria-label="曜日">
+            <button type="button" data-day="weekday" aria-pressed="true">平日</button>
+            <button type="button" data-day="saturday" aria-pressed="false">土曜</button>
+            <button type="button" data-day="holiday" aria-pressed="false">日祝</button>
+          </div>
+        </div>
+        <label class="bp-hour"><span id="bus-hour-label">7時台</span><input type="range" id="bus-hour" min="5" max="23" value="7" aria-label="時間帯"></label>
+        <div class="bp-scale" id="bus-scale"></div>
+        <p class="bp-note">1時間あたり・両方向の合計。<span class="bp-toei">点線</span>＝都営バス</p>
+      </div>
       <div class="float legend" id="legend">
         <span><i class="lg lg-match"></i>条件合致</span>
         <span><i class="lg lg-near"></i>惜しい</span>
