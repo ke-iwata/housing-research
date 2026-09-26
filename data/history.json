@@ -10,11 +10,11 @@
   },
   {
     "date": "2026-09-26",
-    "total": 44,
-    "match": 16,
-    "near": 19,
-    "new": 26,
-    "median_price_match": 6540.0,
-    "median_unit_price": 60.19
+    "total": 58,
+    "match": 21,
+    "near": 26,
+    "new": 40,
+    "median_price_match": 6590,
+    "median_unit_price": 59.75
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-26T00:25:00+09:00",
-  "summary": "新着26件・条件合致16件（前日3件）。第一候補エリアの江戸川1丁目に5,880万円・115㎡・3LDK+納戸・駐車場1台（東急リバブル）、篠崎町4丁目メルディア篠崎（6,490〜6,590万円・110〜118㎡）など好条件が多数。◎水準は中央2丁目（6,198万円・128㎡・エリア外）。値下げはなし（大杉3丁目は掲載元により200万円安い表示あり）。",
+  "updated_at": "2026-09-26T09:45:00+09:00",
+  "summary": "同日2回目の確認で新着14件（うち条件合致6件）、値下げ3件。大杉3丁目の2棟が各200万円値下げし、1号棟が5,980万円・113㎡・3SLDK・駐車2台に。新着では中央2丁目（6,980万円・135㎡・3LDK+納戸・車庫）が◎水準、北篠崎1丁目の全6棟（5,890〜6,590万円・112〜119㎡・車庫2台）も有力。",
   "source_status": {
     "LIFULL HOME'S": "ok",
     "アットホーム": "ok",
@@ -56,7 +56,7 @@
       "zone": "reserve",
       "lat": 35.704937,
       "lng": 139.882568,
-      "price_man": 6180,
+      "price_man": 5980,
       "building_m2": 112.99,
       "land_m2": 84.9,
       "layout": "3SLDK",
@@ -76,6 +76,10 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21379953/"
+        },
+        {
+          "site": "住宅情報館",
+          "url": "https://www.jutakujohokan.co.jp/ikkodate/detail/50294204/"
         }
       ],
       "status": "match",
@@ -86,10 +90,14 @@
         {
           "date": "2026-09-25",
           "price_man": 6180
+        },
+        {
+          "date": "2026-09-26",
+          "price_man": 5980
         }
       ],
       "active": true,
-      "note": "価格は無理のない範囲。延床は110〜120㎡。LIFULL HOME'Sの別業者ページでは同棟を5,980万円表示（9/26確認・要確認）",
+      "note": "9/26 値下げ（6,180→5,980万円・LIFULL HOME'S分譲ページ9/25更新・SUUMO・住宅情報館で確認。三井のリハウスは6,180万円のまま）。2号棟（osugi3-110）と同一分譲地の1号棟。駐車場2台",
       "missed": 0
     },
     {
@@ -183,7 +191,7 @@
         }
       ],
       "active": true,
-      "note": "広さは十分。価格が上限を約200万円超過。東急リバブルでは7,998万円表示（掲載元で価格差あり）",
+      "note": "広さは十分。価格が上限を約200万円超過。東急リバブルでは7,998万円表示（掲載元で価格差あり）。東急リバブルは9/14付「新価格」7,998万円表示（三井のリハウス・住宅情報館・LIFULL HOME'Sは7,698万円のまま・要確認）",
       "missed": 0
     },
     {
@@ -205,6 +213,10 @@
         {
           "site": "東急リバブル",
           "url": "https://www.livable.co.jp/kodate/C13268R39/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1195728621/"
         }
       ],
       "status": "reference",
@@ -263,7 +275,7 @@
       "zone": "first",
       "lat": 35.698635,
       "lng": 139.913254,
-      "price_man": 5598,
+      "price_man": 5398,
       "building_m2": 104.09,
       "land_m2": 69.79,
       "layout": "2SLDK",
@@ -293,10 +305,14 @@
         {
           "date": "2026-09-25",
           "price_man": 5598
+        },
+        {
+          "date": "2026-09-26",
+          "price_man": 5398
         }
       ],
       "active": true,
-      "note": "第一候補エリア。延床・間取り（2LDK+納戸）が不足。LIFULL HOME'Sでは5,398万円、三井のリハウス・住宅情報館では5,598万円表示（要確認）",
+      "note": "9/26 値下げ（5,598→5,398万円・LIFULL HOME'S 9/24更新・住宅情報館・SUUMO複数業者で確認。三井のリハウスは5,598万円のまま）。第一候補エリア。延床・間取り（2LDK+納戸）が不足。ビルトインガレージ1台",
       "missed": 0
     },
     {
@@ -318,6 +334,10 @@
         {
           "site": "東急リバブル",
           "url": "https://www.livable.co.jp/kodate/C48267L68/"
+        },
+        {
+          "site": "住宅情報館",
+          "url": "https://www.jutakujohokan.co.jp/ikkodate/detail/50298196/"
         }
       ],
       "status": "reference",
@@ -401,7 +421,7 @@
         }
       ],
       "active": true,
-      "note": "予算外",
+      "note": "予算外。LIFULL HOME'S・SUUMOでは8,199万円表示（要確認）",
       "missed": 0
     },
     {
@@ -520,7 +540,7 @@
       "zone": "reserve",
       "lat": 35.705537,
       "lng": 139.882568,
-      "price_man": 5780,
+      "price_man": 5580,
       "building_m2": 110.35,
       "land_m2": 100.38,
       "layout": "3SLDK",
@@ -540,6 +560,10 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21379953/"
+        },
+        {
+          "site": "住宅情報館",
+          "url": "https://www.jutakujohokan.co.jp/ikkodate/detail/50294205/"
         }
       ],
       "status": "match",
@@ -550,10 +574,14 @@
         {
           "date": "2026-09-25",
           "price_man": 5780
+        },
+        {
+          "date": "2026-09-26",
+          "price_man": 5580
         }
       ],
       "active": true,
-      "note": "1号棟（osugi3-113）と同一分譲地の2号棟。土地100㎡超と広め。駐車場2台。LIFULL HOME'S掲載の別業者ページでは5,580万円表示（9/26確認・要確認）",
+      "note": "9/26 値下げ（5,780→5,580万円・LIFULL HOME'S分譲ページ9/25更新・SUUMO・住宅情報館で確認。三井のリハウスは5,780万円のまま）。1号棟（osugi3-113）と同一分譲地の2号棟。土地100㎡超と広め。駐車場2台",
       "missed": 0
     },
     {
@@ -692,6 +720,10 @@
         {
           "site": "LIFULL HOME'S",
           "url": "https://www.homes.co.jp/kodate/b-17086370000132/"
+        },
+        {
+          "site": "住宅情報館",
+          "url": "https://www.jutakujohokan.co.jp/ikkodate/detail/50303228/"
         }
       ],
       "status": "reference",
@@ -862,7 +894,7 @@
       ],
       "active": true,
       "missed": 0,
-      "note": "第一候補エリア。メルディア一之江。価格に余裕"
+      "note": "第一候補エリア。メルディア一之江。価格に余裕。ハウスプラザ掲載分（SUUMO・アットホーム）は5,990万円表示"
     },
     {
       "id": "edogawa3-104",
@@ -1432,7 +1464,7 @@
       ],
       "active": true,
       "missed": 0,
-      "note": "候補エリア外だが◎水準（7,000万円以下・120㎡以上）。KEIAI GRACE。LIFULL HOME'Sでは6,398万円表示"
+      "note": "候補エリア外だが◎水準（7,000万円以下・120㎡以上）。KEIAI GRACE。LIFULL HOME'S（9/24更新）は6,398万円、住宅情報館は6,198万円表示（要確認）"
     },
     {
       "id": "ichinoe7-120",
@@ -1523,7 +1555,7 @@
       "building_m2": 115.42,
       "land_m2": 71.04,
       "layout": "3LDK+納戸",
-      "parking": "不明",
+      "parking": "ガレージあり（台数不明）",
       "access": "都営新宿線 篠崎駅 徒歩15分",
       "bus": null,
       "completion": "2026年9月",
@@ -1531,6 +1563,10 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21675312/"
+        },
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-1584400000008/"
         }
       ],
       "status": "match",
@@ -1545,7 +1581,7 @@
       ],
       "active": true,
       "missed": 0,
-      "note": "第一候補エリアで5,890万円と安い。駐車場要確認"
+      "note": "第一候補エリアで5,890万円と安い。LIFULL HOME'S（MKトラスト）で駐車場「ガレージ」表記を確認"
     },
     {
       "id": "shishibone5-109",
@@ -1729,6 +1765,532 @@
       "active": true,
       "missed": 0,
       "note": "候補エリア外（鹿骨・篠崎の隣接地）だが延床131㎡で上限内。完成時期は要確認"
+    },
+    {
+      "grade": null,
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 7580
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "nishimizue4-114",
+      "address": "東京都江戸川区西瑞江4丁目",
+      "town": "西瑞江",
+      "zone": "reserve",
+      "lat": 35.682832,
+      "lng": 139.884786,
+      "price_man": 7580,
+      "building_m2": 114.61,
+      "land_m2": 70.06,
+      "layout": "3LDK+納戸",
+      "parking": "1台（ビルトインガレージ）",
+      "access": "都営新宿線 一之江駅 徒歩7分",
+      "bus": null,
+      "completion": "2027年1月中旬予定",
+      "sources": [
+        {
+          "site": "SUUMO",
+          "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21784908/"
+        }
+      ],
+      "status": "near",
+      "note": "価格が上限を80万円超過。木造3階建て・間口13.6m。座標は西瑞江の代表点（GSI取得不可）"
+    },
+    {
+      "grade": null,
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 6780
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "shinozaki4-103",
+      "address": "東京都江戸川区篠崎町4丁目",
+      "town": "篠崎町",
+      "zone": "first",
+      "lat": 35.70085,
+      "lng": 139.910278,
+      "price_man": 6780,
+      "building_m2": 103.51,
+      "land_m2": 143.87,
+      "layout": "2SLDK",
+      "parking": "2台（縦列3台分の表記あり）",
+      "access": "都営新宿線 篠崎駅 徒歩14分",
+      "bus": null,
+      "completion": "2026年12月予定",
+      "sources": [
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-17086630000002/"
+        },
+        {
+          "site": "SUUMO",
+          "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21140834/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/6991252603/"
+        }
+      ],
+      "status": "reference",
+      "note": "第一候補エリア。土地143.87㎡（実測）と広く駐車2台だが、延床・間取り（2LDK+納戸）が不足。2階建て"
+    },
+    {
+      "grade": null,
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 6790
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "minamishinozaki1-103",
+      "address": "東京都江戸川区南篠崎町1丁目",
+      "town": "南篠崎町",
+      "zone": "first",
+      "lat": 35.694217,
+      "lng": 139.906204,
+      "price_man": 6790,
+      "building_m2": 103.81,
+      "land_m2": 80.3,
+      "layout": "4LDK",
+      "parking": "1台（無料）",
+      "access": "都営新宿線 瑞江駅 徒歩16分",
+      "bus": null,
+      "completion": "2026年5月（完成済）",
+      "sources": [
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1199342719/"
+        }
+      ],
+      "status": "near",
+      "note": "minamishinozaki1-110と同じ全3棟のB号棟。延床が110㎡未満。三井のリハウス（FU1BGA5C）では延床91.39㎡表記（要確認）"
+    },
+    {
+      "grade": null,
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 5890
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "shinozaki3-119",
+      "address": "東京都江戸川区篠崎町3丁目",
+      "town": "篠崎町",
+      "zone": "first",
+      "lat": 35.705152,
+      "lng": 139.914174,
+      "price_man": 5890,
+      "building_m2": 119.31,
+      "land_m2": 71.28,
+      "layout": "3LDK",
+      "parking": "不明",
+      "access": "都営新宿線 篠崎駅 徒歩15分",
+      "bus": null,
+      "completion": "2026年10月",
+      "sources": [
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-1552850000011/"
+        }
+      ],
+      "status": "near",
+      "note": "3LDK（納戸なし）。駐車場要確認。shinozaki3-115と同価格・同丁目・土地もほぼ同じで、同一物件の可能性あり（延床・完成時期の表記が異なるため別登録）"
+    },
+    {
+      "grade": null,
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 7490
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "ichinoe7-102",
+      "address": "東京都江戸川区一之江7丁目",
+      "town": "一之江",
+      "zone": "other",
+      "lat": 35.687062,
+      "lng": 139.880178,
+      "price_man": 7490,
+      "building_m2": 102.47,
+      "land_m2": 74.69,
+      "layout": "2LDK+2S",
+      "parking": "1台（無料）",
+      "access": "都営新宿線 一之江駅 徒歩6分",
+      "bus": null,
+      "completion": "2026年7月（完成済）",
+      "sources": [
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-1435890006709/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1151622728/"
+        }
+      ],
+      "status": "reference",
+      "note": "ichinoe7-120と同じHeartfulTownのC号棟。延床不足。間取りは2LDK+2S（LIFULL HOME'Sの個別ページは4LDK表記）"
+    },
+    {
+      "grade": "○",
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 6590
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "kitashinozaki1-111",
+      "address": "東京都江戸川区北篠崎1丁目",
+      "town": "北篠崎",
+      "zone": "other",
+      "lat": 35.717985,
+      "lng": 139.900007,
+      "price_man": 6590,
+      "building_m2": 111.77,
+      "land_m2": 75.05,
+      "layout": "4LDK",
+      "parking": "2台（車庫）",
+      "access": "JR総武線 小岩駅／都営新宿線 篠崎駅 徒歩24分",
+      "bus": null,
+      "completion": "2026年12月下旬予定",
+      "sources": [
+        {
+          "site": "SUUMO",
+          "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21542969/"
+        }
+      ],
+      "status": "match",
+      "note": "全6棟（5,890〜6,590万円・111.76〜119.06㎡・車庫2台・ZEH水準）の1号棟。6号棟は5,890万円（間取り・面積の表記が揺れており要確認）。座標は「北篠崎」停の位置（概略）"
+    },
+    {
+      "grade": null,
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 7588
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "kitashinozaki2-137",
+      "address": "東京都江戸川区北篠崎2丁目",
+      "town": "北篠崎",
+      "zone": "other",
+      "lat": 35.718585,
+      "lng": 139.900607,
+      "price_man": 7588,
+      "building_m2": 137.29,
+      "land_m2": 77.88,
+      "layout": "4LDK",
+      "parking": "シャッター付き車庫＋カースペース",
+      "access": "JR総武線 小岩駅 バス12分",
+      "bus": "「北篠崎」停 徒歩6分",
+      "completion": "2026年8〜9月",
+      "sources": [
+        {
+          "site": "SUUMO",
+          "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_20606203/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/6991928721/"
+        }
+      ],
+      "status": "near",
+      "note": "延床137㎡と広いが価格が上限を88万円超過。同分譲地に3SLDK 122.84㎡も同価格（アットホーム 6991928896）。座標は「北篠崎」停付近（概略）"
+    },
+    {
+      "grade": null,
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 5498
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "kitashinozaki2-113",
+      "address": "東京都江戸川区北篠崎2丁目",
+      "town": "北篠崎",
+      "zone": "other",
+      "lat": 35.717385,
+      "lng": 139.899407,
+      "price_man": 5498,
+      "building_m2": 113.23,
+      "land_m2": 66.94,
+      "layout": "3LDK",
+      "parking": "1台（車庫）",
+      "access": "都営新宿線 篠崎駅 バス8分",
+      "bus": "「北篠崎」停 徒歩5分",
+      "completion": "2026年5月（完成済）",
+      "sources": [
+        {
+          "site": "SUUMO",
+          "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_20047791/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1067780898/"
+        }
+      ],
+      "status": "near",
+      "note": "3LDK（納戸なし）。延床は車庫13.66㎡を含む。旧価格6,299万円の表記があり値下げ済み。座標は「北篠崎」停付近（概略）"
+    },
+    {
+      "grade": "◎",
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 6980
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "chuo2-135",
+      "address": "東京都江戸川区中央2丁目",
+      "town": "中央",
+      "zone": "other",
+      "lat": 35.705636,
+      "lng": 139.873658,
+      "price_man": 6980,
+      "building_m2": 135.25,
+      "land_m2": 83.02,
+      "layout": "3LDK+納戸",
+      "parking": "1台（車庫）",
+      "access": "都営新宿線 一之江駅 バス16分",
+      "bus": "「大杉小学校前」停 徒歩3分",
+      "completion": "2027年1月予定",
+      "sources": [
+        {
+          "site": "SUUMO",
+          "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21303688/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/6991519599/"
+        }
+      ],
+      "status": "match",
+      "note": "候補エリア外だが◎水準（7,000万円以下・120㎡以上）。延床は車庫17.33㎡を含む。座標は「大杉小学校前」停の位置（概略）"
+    },
+    {
+      "grade": "○",
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 6280
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "nishiichinoe3-117",
+      "address": "東京都江戸川区西一之江3丁目",
+      "town": "西一之江",
+      "zone": "other",
+      "lat": 35.692304,
+      "lng": 139.876165,
+      "price_man": 6280,
+      "building_m2": 117.16,
+      "land_m2": 69.49,
+      "layout": "3LDK+納戸",
+      "parking": "1台（車庫・ハイルーフ可）",
+      "access": "都営新宿線 篠崎駅 バス13分",
+      "bus": "「松江第四中前」停 徒歩2分",
+      "completion": "2026年10月",
+      "sources": [
+        {
+          "site": "SUUMO",
+          "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_20458369/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/6990173208/"
+        }
+      ],
+      "status": "match",
+      "note": "延床は車庫13.22㎡を含む。座標は「西一之江三丁目」停の位置（概略）"
+    },
+    {
+      "grade": "○",
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 5990
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "matsumoto2-112",
+      "address": "東京都江戸川区松本2丁目",
+      "town": "松本",
+      "zone": "other",
+      "lat": 35.709984,
+      "lng": 139.883259,
+      "price_man": 5990,
+      "building_m2": 112.97,
+      "land_m2": 70.25,
+      "layout": "4LDK",
+      "parking": "不明",
+      "access": "JR総武線 新小岩駅／都営新宿線 篠崎駅 バス便",
+      "bus": "「鹿本橋」停 徒歩2分",
+      "completion": "2027年2月予定",
+      "sources": [
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1181284334/"
+        }
+      ],
+      "status": "match",
+      "note": "5,990万円・4LDKと割安。駐車場要確認。鹿骨に隣接。座標は「鹿本橋」停の位置（概略）"
+    },
+    {
+      "grade": "○",
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 7190
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "kitakoiwa3-125",
+      "address": "東京都江戸川区北小岩3丁目",
+      "town": "北小岩",
+      "zone": "other",
+      "lat": null,
+      "lng": null,
+      "price_man": 7190,
+      "building_m2": 125.44,
+      "land_m2": 71.14,
+      "layout": "3LDK+納戸",
+      "parking": "1台",
+      "access": "京成本線 江戸川駅 徒歩7分／JR小岩駅 徒歩15分",
+      "bus": null,
+      "completion": "2026年8月末（完成済）",
+      "sources": [
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-17067100002170/"
+        }
+      ],
+      "status": "match",
+      "note": "HeartfulTown B号棟。候補エリア外。座標未取得（国土地理院の住所検索がタイムアウト）"
+    },
+    {
+      "grade": null,
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 6690
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "chuo3-107",
+      "address": "東京都江戸川区中央3丁目",
+      "town": "中央",
+      "zone": "other",
+      "lat": 35.715619,
+      "lng": 139.873707,
+      "price_man": 6690,
+      "building_m2": 107.92,
+      "land_m2": 63.61,
+      "layout": "3LDK+納戸",
+      "parking": "1台（ビルトイン）",
+      "access": "JR総武線 新小岩駅 徒歩21分",
+      "bus": "「菅原橋」停 徒歩3〜5分（小岩駅・篠崎駅・新小岩駅からバス）",
+      "completion": "2026年10〜11月予定",
+      "sources": [
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-17086370000109/"
+        },
+        {
+          "site": "SUUMO",
+          "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21046563/"
+        }
+      ],
+      "status": "near",
+      "note": "延床が110㎡未満。座標は「菅原橋」停の位置（概略）"
+    },
+    {
+      "grade": null,
+      "first_seen": "2026-09-26",
+      "last_seen": "2026-09-26",
+      "price_history": [
+        {
+          "date": "2026-09-26",
+          "price_man": 6580
+        }
+      ],
+      "active": true,
+      "missed": 0,
+      "id": "chuo2-101",
+      "address": "東京都江戸川区中央2丁目",
+      "town": "中央",
+      "zone": "other",
+      "lat": 35.706236,
+      "lng": 139.874258,
+      "price_man": 6580,
+      "building_m2": 101.02,
+      "land_m2": 87.02,
+      "layout": "3LDK+納戸",
+      "parking": "1台（カースペース）",
+      "access": "JR総武線 新小岩駅 バス17分",
+      "bus": "「大杉小学校前」停 徒歩4分",
+      "completion": "2027年1月予定",
+      "sources": [
+        {
+          "site": "東急リバブル",
+          "url": "https://www.livable.co.jp/kodate/C48267M72/"
+        },
+        {
+          "site": "SUUMO",
+          "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21442656/"
+        }
+      ],
+      "status": "near",
+      "note": "延床が110㎡未満。土地87㎡＋私道持分。木造3階建て。座標は「大杉小学校前」停付近（概略）"
     }
   ],
   "ended": [],
