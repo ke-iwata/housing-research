@@ -180,7 +180,7 @@ body:not([data-view="map"]) .search { visibility: hidden; }
 .pin-icon { background: none; border: 0; }
 .pin {
   position: absolute; left: 0; top: 0;
-  transform: translate(-50%, calc(-100% - 7px - var(--lift, 0px)));
+  transform: translate(-50%, calc(-100% - 7px));
   display: inline-flex; align-items: center; gap: 3px;
   height: 26px; padding: 0 9px; border-radius: 999px; border: 0;
   font: 700 12px/1 var(--font); white-space: nowrap; cursor: pointer;
@@ -188,8 +188,21 @@ body:not([data-view="map"]) .search { visibility: hidden; }
   box-shadow: 0 1px 2px rgba(20, 32, 28, .1), 0 4px 10px rgba(20, 32, 28, .1);
 }
 .pin::after { content: ""; position: absolute; left: 50%; bottom: -5px; width: 8px; height: 8px; background: inherit; transform: translateX(-50%) rotate(45deg); border-radius: 0 0 2px 0; }
-.pin.lifted::after { display: none; }
-.pin.lifted::before { content: ""; position: absolute; left: 50%; top: 100%; width: 1.5px; height: calc(var(--lift, 0px) + 7px); background: #9aa5a0; transform: translateX(-50%); }
+.pin .cnt { margin-left: 4px; padding: 2px 6px; border-radius: 999px; background: var(--ink); color: #fff; font-size: 10px; font-weight: 800; }
+.pin.near .cnt { background: var(--near-text); }
+.pin.reference .cnt { background: var(--muted); }
+.cl-list { display: flex; flex-direction: column; gap: 2px; max-height: 240px; overflow-y: auto; margin: 4px -6px 0; }
+.cl-item { display: flex; align-items: center; gap: 8px; width: 100%; padding: 8px 6px; border: 0; border-radius: 10px; background: transparent; text-align: left; }
+.cl-item:hover { background: var(--sub); }
+.cl-item .lg { flex: none; }
+.cl-name { flex: 1; min-width: 0; font-size: 13px; font-weight: 700; display: flex; flex-direction: column; }
+.cl-name em { font-style: normal; font-size: 10px; color: var(--near-text); }
+.cl-name small { font-size: 11px; font-weight: 500; color: var(--muted); }
+.cl-item b { font-size: 15px; font-weight: 800; white-space: nowrap; }
+.cl-item b small { font-size: 10px; font-weight: 500; color: var(--muted); }
+/* 候補エリアの円などをクリックしたときにブラウザのフォーカス枠（四角）を出さない */
+.leaflet-interactive:focus, .leaflet-container path:focus, .leaflet-container:focus, .leaflet-container:focus-visible { outline: none; }
+.pin.sel .cnt { background: #fff; color: var(--accent); }
 .pin.best { box-shadow: 0 0 0 2px var(--accent), 0 4px 10px rgba(20, 32, 28, .12); }
 .pin.near { background: var(--near-soft); color: var(--near-text); box-shadow: inset 0 0 0 1px var(--near-line), 0 2px 6px rgba(20, 32, 28, .08); }
 .pin.reference { background: var(--sub); color: var(--muted); font-weight: 600; box-shadow: inset 0 0 0 1px var(--border); }

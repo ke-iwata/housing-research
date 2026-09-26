@@ -145,6 +145,8 @@
     document.addEventListener("click", (e) => {
       const b = e.target.closest("[data-open-detail]");
       if (b) openDetail(b.dataset.openDetail);
+      const c = e.target.closest("[data-pick]");
+      if (c) select(c.dataset.pick, { scroll: true });
     });
   }
 
@@ -199,7 +201,7 @@
         ? { paddingTopLeft: [16, 60], paddingBottomRight: [16, Math.round(h * 0.44) + 16] }
         : { paddingTopLeft: [24, 24], paddingBottomRight: [240, 24] });
     }
-    map.on("zoomend", declutter);
+    map.on("zoomend", () => renderPins());
 
     renderMapView();
   }
@@ -348,40 +350,60 @@
     return `<button type="button" class="pin ${cls}" aria-label="${esc(short(x.address))} ${num(x.price_man)}万円">${num(x.price_man)}${x.grade === "◎" ? " ◎" : ""}</button>`;
   }
 
-  let pinMarkers = [];
+  // 画面上で近い物件はひとつのピンにまとめ、価格の幅と件数を出す（選択中の物件を含むまとまりは緑で、その価格を出す）
+  const CLUSTER_PX = { x: 52, y: 30 };
   function renderPins() {
     pinLayer.clearLayers();
     const rows = filtered();
     const sel = state.sel && byId(state.sel);
     if (sel && !rows.includes(sel)) rows.push(sel);
-    pinMarkers = rows.filter((x) => x.lat != null).map((x) => {
-      const z = x.id === state.sel ? 1000 : { match: 300, near: 200, reference: 100 }[x.status];
-      const marker = L.marker([x.lat, x.lng], { keyboard: false, zIndexOffset: z, riseOnHover: true, icon: L.divIcon({ className: "pin-icon", html: pinHtml(x), iconSize: [0, 0] }) })
-        .on("click", () => select(x.id, { scroll: true }))
-        .addTo(pinLayer);
-      return { x, marker };
+    const items = rows.filter((x) => x.lat != null)
+      .map((x) => ({ x, p: map.latLngToLayerPoint([x.lat, x.lng]) }))
+      .sort((a, b) => STATUS_RANK[a.x.status] - STATUS_RANK[b.x.status] || a.x.price_man - b.x.price_man);
+    const groups = [];
+    items.forEach((o) => {
+      const g = groups.find((q) => Math.abs(q.p.x - o.p.x) < CLUSTER_PX.x && Math.abs(q.p.y - o.p.y) < CLUSTER_PX.y);
+      if (g) g.members.push(o.x);
+      else groups.push({ p: o.p, members: [o.x] });
     });
-    declutter();
+    groups.forEach((g) => {
+      if (g.members.length === 1) {
+        const x = g.members[0];
+        const z = x.id === state.sel ? 1000 : { match: 300, near: 200, reference: 100 }[x.status];
+        L.marker([x.lat, x.lng], { keyboard: false, zIndexOffset: z, riseOnHover: true, icon: L.divIcon({ className: "pin-icon", html: pinHtml(x), iconSize: [0, 0] }) })
+          .on("click", () => select(x.id, { scroll: true }))
+          .addTo(pinLayer);
+        return;
+      }
+      const m = g.members;
+      const lat = m.reduce((a, x) => a + x.lat, 0) / m.length, lng = m.reduce((a, x) => a + x.lng, 0) / m.length;
+      const top = m.some((x) => x.status === "match") ? "match" : m.some((x) => x.status === "near") ? "near" : "reference";
+      L.marker([lat, lng], { keyboard: false, zIndexOffset: m.some((x) => x.id === state.sel) ? 1000 : 400, riseOnHover: true, icon: L.divIcon({ className: "pin-icon", html: clusterHtml(m, top), iconSize: [0, 0] }) })
+        .on("click", () => openCluster(m, [lat, lng]))
+        .addTo(pinLayer);
+    });
   }
 
-  // 近い物件の価格ラベルが重ならないよう、優先度の低いものから上にずらす（線で元の位置とつなぐ）
-  function declutter() {
-    const placed = [];
-    const hit = (r) => placed.some((q) => r.x1 < q.x2 && q.x1 < r.x2 && r.y1 < q.y2 && q.y1 < r.y2);
-    [...pinMarkers]
-      .sort((a, b) => (b.x.id === state.sel) - (a.x.id === state.sel) || STATUS_RANK[a.x.status] - STATUS_RANK[b.x.status] || a.x.price_man - b.x.price_man)
-      .forEach(({ x, marker }) => {
-        const el = marker.getElement() && marker.getElement().querySelector(".pin");
-        if (!el) return;
-        const p = map.latLngToLayerPoint([x.lat, x.lng]);
-        const w = el.offsetWidth || 60;
-        const rect = (lift) => ({ x1: p.x - w / 2 - 2, x2: p.x + w / 2 + 2, y1: p.y - 35 - lift, y2: p.y - 5 - lift });
-        let lift = 0;
-        while (lift < 28 * 6 && hit(rect(lift))) lift += 28;
-        placed.push(rect(lift));
-        el.style.setProperty("--lift", `${lift}px`);
-        el.classList.toggle("lifted", lift > 0);
-      });
+  function priceRange(m) {
+    const ps = m.map((x) => x.price_man);
+    const lo = Math.min(...ps), hi = Math.max(...ps);
+    return lo === hi ? num(lo) : `${num(lo)}〜${num(hi)}`;
+  }
+  function clusterHtml(m, top) {
+    const sel = m.find((x) => x.id === state.sel);
+    if (sel) return `<button type="button" class="pin cluster sel" aria-label="${esc(short(sel.address))} ${num(sel.price_man)}万円 ほか${m.length - 1}件">${num(sel.price_man)}<span class="cnt">+${m.length - 1}件</span></button>`;
+    return `<button type="button" class="pin cluster ${top}${m.some((x) => x.grade === "◎") ? " best" : ""}" aria-label="${m.length}件 ${priceRange(m)}万円">${priceRange(m)}<span class="cnt">${m.length}件</span></button>`;
+  }
+  function openCluster(m, latlng) {
+    const rows = [...m].sort((a, b) => STATUS_RANK[a.status] - STATUS_RANK[b.status] || a.price_man - b.price_man);
+    popup.setLatLng(latlng).setContent(`<div class="pop">
+      <span class="pop-where">この付近の物件</span>
+      <span class="price">${priceRange(m)}<small>万円 · ${m.length}件</small></span>
+      <div class="cl-list">${rows.map((x) => `<button type="button" class="cl-item" data-pick="${esc(x.id)}">
+        <i class="lg lg-${x.status === "reference" ? "ref" : x.status}"></i>
+        <span class="cl-name">${esc(short(x.address))}${x.grade ? ` ${esc(x.grade)}` : ""}${isFresh(x) ? ' <em>NEW</em>' : ""}<small>${esc(x.layout)} · 延床${m2(x.building_m2)}</small></span>
+        <b>${num(x.price_man)}<small>万</small></b></button>`).join("")}</div>
+    </div>`).openOn(map);
   }
 
   function popupHtml(x) {
