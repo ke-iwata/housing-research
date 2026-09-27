@@ -64,6 +64,10 @@
         <label><input type="checkbox" id="lyr-zones" checked>候補エリア</label>
         <label><input type="checkbox" id="lyr-bus" checked>バス路線と本数</label>
         <label><input type="checkbox" id="lyr-stations" checked>駅</label>
+        <label><input type="checkbox" id="lyr-commute">通勤時間（目安）</label>
+        <label><input type="checkbox" id="lyr-schools">小中学校</label>
+        <label><input type="checkbox" id="lyr-es">小学校区</label>
+        <label><input type="checkbox" id="lyr-jhs">中学校区</label>
         <label><input type="checkbox" id="lyr-flood">洪水 浸水想定</label>
         <label><input type="checkbox" id="lyr-tide">高潮 浸水想定</label>
       </details>
@@ -79,6 +83,11 @@
         <label class="bp-hour"><span id="bus-hour-label">7時台</span><input type="range" id="bus-hour" min="5" max="23" value="7" aria-label="時間帯"></label>
         <div class="bp-scale" id="bus-scale"></div>
         <p class="bp-note">1時間あたり・両方向の合計。<span class="bp-toei">点線</span>＝都営バス</p>
+      </div>
+      <div class="float commute-legend" id="commute-legend" hidden>
+        <span class="float-title">通勤時間の目安（平日朝）</span>
+        <div class="cl-scale" id="commute-scale"></div>
+        <p class="bp-note">バス・電車・徒歩の組み合わせで最も早いもの</p>
       </div>
       <div class="float legend" id="legend">
         <span><i class="lg lg-match"></i>条件合致</span>

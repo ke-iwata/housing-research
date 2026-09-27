@@ -12,7 +12,7 @@
   const COLORS = { accent: "#087a58", accentPin: "#12a87a", near: "#ee9b1a", ref: "#b8c1bd", ink: "#14201c", muted: "#67736f", grid: "#eef1ee", blue: "#2f6fe4" };
 
   const state = { view: "map", filter: "match", onlyNew: false, sort: "price", q: "", sel: null, scope: "all", reportDate: null, busDay: "weekday", busHour: 7 };
-  let config = {}, data = {}, history = [], latest = null, bus = null;
+  let config = {}, data = {}, history = [], latest = null, bus = null, poi = null, commute = null;
   let map, popup, pinLayer, zoneLayer, stationLayer, floodLayer, tideLayer, busLayer, busRenderer;
   let mapReady = false, marketDrawn = false, reportDrawn = false;
   const charts = {};
@@ -63,11 +63,13 @@
 
   /* ---------- 起動 ---------- */
   async function init() {
-    [config, data, history, bus] = await Promise.all([
+    [config, data, history, bus, poi, commute] = await Promise.all([
       getJSON("data/config.json", {}),
       getJSON("data/listings.json", { listings: [], ended: [], land: [] }),
       getJSON("data/history.json", []),
       getJSON("data/bus.json", null),
+      getJSON("data/poi.json", null),
+      getJSON("data/commute.json", null),
     ]);
     latest = history.length ? history[history.length - 1].date : active().reduce((m, x) => (x.last_seen > m ? x.last_seen : m), "");
     renderHeadstats();
@@ -187,6 +189,7 @@
     // スマホは画面が狭いので、バスの本数レイヤーはレイヤーボタンから表示する
     if (window.matchMedia("(max-width: 860px)").matches) $("#lyr-bus").checked = false;
     initBus();
+    initEnv();
     toggle("#lyr-flood", floodLayer);
     toggle("#lyr-tide", tideLayer);
 
@@ -308,6 +311,104 @@
     }).join("")}</div><p class="d-note" style="font-size:11px;color:var(--muted)">距離は物件のある丁目の代表点からの直線距離です。</p></div>`;
   }
 
+  /* ---------- 通勤時間・小中学校・学区 ---------- */
+  const COMMUTE_STEPS = [
+    { max: 30, color: "#1a9850", label: "〜29分" },
+    { max: 40, color: "#91cf60", label: "30〜39" },
+    { max: 50, color: "#fee08b", label: "40〜49" },
+    { max: 60, color: "#fc8d59", label: "50〜59" },
+    { max: 999, color: "#d73027", label: "60分〜" },
+  ];
+  const commuteStep = (m) => COMMUTE_STEPS.find((s) => m < s.max);
+
+  function inRing(lat, lng, ring) {
+    let c = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const [ay, ax] = ring[i], [by, bx] = ring[j];
+      if ((ay > lat) !== (by > lat) && lng < ((bx - ax) * (lat - ay)) / (by - ay) + ax) c = !c;
+    }
+    return c;
+  }
+  const districtOf = (list, x) => (list || []).find((d) => d.polygons.some((poly) => inRing(x.lat, x.lng, poly[0]) && !poly.slice(1).some((h) => inRing(x.lat, x.lng, h))));
+  function commuteOf(x) {
+    if (!commute || x.lat == null) return null;
+    const [dl, dg] = commute.cell;
+    let best = null, bd = Infinity;
+    commute.cells.forEach((c) => {
+      const d = Math.abs(c[0] - x.lat) / dl + Math.abs(c[1] - x.lng) / dg;
+      if (d < bd) { bd = d; best = c; }
+    });
+    return best && bd < 3 ? { min: best[2], via: commute.via[best[3]] } : null;
+  }
+  const nearestSchool = (x, type) => {
+    if (!poi) return null;
+    let best = null;
+    poi.schools.filter((s) => s.type === type).forEach((s) => {
+      const m = Math.hypot((s.lat - x.lat) * 111000, (s.lng - x.lng) * 90400);
+      if (!best || m < best.m) best = { s, m };
+    });
+    return best;
+  };
+
+  function initEnv() {
+    const hideLabel = (id) => ($(id).closest("label").hidden = true);
+    const bind = (id, layer, extra) => {
+      const sync = () => { $(id).checked ? layer.addTo(map) : map.removeLayer(layer); if (extra) extra(); };
+      $(id).addEventListener("change", sync);
+      sync();
+    };
+    if (commute && commute.cells) {
+      map.createPane("commute").style.zIndex = 360;
+      const r = L.canvas({ pane: "commute", padding: 0.3 });
+      const layer = L.layerGroup();
+      const [dl, dg] = commute.cell;
+      commute.cells.forEach(([lat, lng, m, v]) => {
+        L.rectangle([[lat - dl / 2, lng - dg / 2], [lat + dl / 2, lng + dg / 2]], { renderer: r, stroke: false, fillColor: commuteStep(m).color, fillOpacity: 0.5 })
+          .bindTooltip(`通勤の目安 <span class="bt-n">約${m}分</span><br>${esc(commute.via[v])}`, { sticky: true, className: "bus-tip" })
+          .addTo(layer);
+      });
+      $("#commute-scale").innerHTML = COMMUTE_STEPS.map((s) => `<span><i style="background:${s.color}"></i>${s.label}</span>`).join("");
+      bind("#lyr-commute", layer, () => ($("#commute-legend").hidden = !$("#lyr-commute").checked));
+    } else hideLabel("#lyr-commute");
+
+    if (poi && poi.schools) {
+      const schools = L.layerGroup();
+      poi.schools.forEach((s) => {
+        const es = s.type === "小学校";
+        L.marker([s.lat, s.lng], { keyboard: false, icon: L.divIcon({ className: "school-icon", html: `<div class="school ${es ? "es" : "jhs"}">${es ? "小" : "中"}</div>`, iconSize: [0, 0] }) })
+          .bindTooltip(`<b>${esc(s.name)}</b><br>${esc(s.address)}`, { className: "bus-tip", direction: "top", offset: [0, -10] })
+          .addTo(schools);
+      });
+      bind("#lyr-schools", schools);
+      const districtLayer = (list, color, dash) => {
+        const g = L.layerGroup();
+        list.forEach((d) => d.polygons.forEach((poly) =>
+          L.polygon(poly, { color, weight: 2, dashArray: dash, fillColor: color, fillOpacity: 0.04 })
+            .bindTooltip(`<b>${esc(d.school)}</b> の学区`, { sticky: true, className: "bus-tip" })
+            .addTo(g)));
+        return g;
+      };
+      bind("#lyr-es", districtLayer(poi.elementary_districts, "#7c4dcc", "6 4"));
+      bind("#lyr-jhs", districtLayer(poi.junior_districts, "#0e7490", null));
+    } else ["#lyr-schools", "#lyr-es", "#lyr-jhs"].forEach(hideLabel);
+  }
+
+  function envHtml(x) {
+    if (x.lat == null || (!poi && !commute)) return "";
+    const rows = [];
+    const c = commuteOf(x);
+    if (c) rows.push(`<div class="env-row commute"><span>通勤の目安</span><b>約${c.min}分<br><small style="font-weight:500;color:var(--muted)">${esc(c.via)}</small></b></div>`);
+    if (poi) {
+      const es = districtOf(poi.elementary_districts, x), jhs = districtOf(poi.junior_districts, x);
+      const ne = nearestSchool(x, "小学校"), nj = nearestSchool(x, "中学校");
+      rows.push(`<div class="env-row"><span>小学校区</span><b>${es ? esc(es.school) : "—"}</b></div>`);
+      rows.push(`<div class="env-row"><span>中学校区</span><b>${jhs ? esc(jhs.school) : "—"}</b></div>`);
+      if (ne) rows.push(`<div class="env-row"><span>最寄りの小学校</span><b>${esc(ne.s.name)} 約${Math.round(ne.m / 10) * 10}m</b></div>`);
+      if (nj) rows.push(`<div class="env-row"><span>最寄りの中学校</span><b>${esc(nj.s.name)} 約${Math.round(nj.m / 10) * 10}m</b></div>`);
+    }
+    return `<div class="d-sec"><h3>学区・通勤</h3><div class="env">${rows.join("")}</div><p class="d-note" style="font-size:11px;color:var(--muted)">物件の位置は丁目の代表点なので、学区の境目付近は掲載元や区の通学区域で確認してください。学区は2021年度のデータです。</p></div>`;
+  }
+
   function renderMapView() {
     renderStatusTabs();
     renderList();
@@ -415,6 +516,7 @@
       <span class="pop-line">${esc(x.layout)} · 延床${m2(x.building_m2)} · 土地${m2(x.land_m2)}</span>
       <span class="pop-where">${esc(String(x.access || "").split("／")[0])}</span>
       ${(() => { const b = busiest(x); return b ? `<span class="pop-bus">バス停「${esc(b.s.name)}」約${Math.round(b.m / 10) * 10}m · 平日7時台 <b>${b.s.h.weekday[7]}本</b></span>` : ""; })()}
+      ${(() => { const c = commuteOf(x); return c ? `<span class="pop-commute">通勤の目安 <b>約${c.min}分</b>（${esc(c.via)}）</span>` : ""; })()}
       <div class="pop-actions"><button type="button" class="btn primary grow" data-open-detail="${esc(x.id)}">詳細を見る</button></div>
     </div>`;
   }
@@ -467,6 +569,7 @@
           <dt>完成</dt><dd>${esc(x.completion || "要確認")}</dd>
         </dl>
       </div>
+      ${envHtml(x)}
       ${nearStopsHtml(x)}
       ${x.note ? `<div class="d-sec"><h3>メモ</h3><p class="d-note">${esc(x.note)}</p></div>` : ""}
       <div class="d-sec"><h3>価格の推移</h3><div class="phist">${ph.map((p, i) => `<div><span>${mmdd(p.date)} ${i === 0 ? "初掲載" : p.price_man < ph[i - 1].price_man ? "値下げ" : "価格変更"}</span><b>${num(p.price_man)}万円</b></div>`).join("")}</div></div>

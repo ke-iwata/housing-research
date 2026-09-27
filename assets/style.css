@@ -170,6 +170,20 @@ body:not([data-view="map"]) .search { visibility: hidden; }
 .ns-dest { font-size: 12px; color: var(--text-2); display: flex; flex-wrap: wrap; gap: 4px 10px; }
 .ns-dest em { font-style: normal; font-weight: 700; color: var(--ink); }
 .pop-bus { font-size: 12px; color: var(--blue-text); background: var(--blue-soft); padding: 6px 9px; border-radius: 8px; }
+.commute-legend { left: 16px; top: 16px; width: 280px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.cl-scale { display: flex; gap: 3px; }
+.cl-scale span { flex: 1; display: flex; flex-direction: column; gap: 3px; font-size: 10px; color: var(--muted); text-align: center; }
+.cl-scale i { display: block; height: 8px; border-radius: 3px; }
+.school-icon { background: none; border: 0; }
+.school { position: absolute; left: 0; top: 0; transform: translate(-50%, -50%); width: 20px; height: 20px; border-radius: 6px; display: grid; place-items: center; color: #fff; font: 800 11px/1 var(--font); box-shadow: 0 0 0 2px #fff, 0 2px 6px rgba(20,32,28,.2); }
+.school.es { background: #7c4dcc; }
+.school.jhs { background: #0e7490; }
+.env { display: flex; flex-direction: column; gap: 8px; }
+.env-row { display: flex; justify-content: space-between; gap: 10px; padding: 10px 12px; border-radius: 10px; background: var(--sub); font-size: 13px; }
+.env-row span { color: var(--muted); white-space: nowrap; }
+.env-row b { text-align: right; }
+.env-row.commute b { font-size: 16px; }
+.pop-commute { font-size: 12px; color: var(--text-2); }
 .hazard-note { left: 50%; top: 16px; transform: translateX(-50%); width: min(460px, calc(100% - 260px)); padding: 10px 14px; background: var(--blue-soft); color: var(--blue-text); line-height: 1.6; }
 .leaflet-bottom.leaflet-right .leaflet-control-zoom { margin-bottom: 24px; }
 .leaflet-control-zoom.leaflet-bar { border: 0; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); }
@@ -415,6 +429,7 @@ body:not([data-view="map"]) .search { visibility: hidden; }
   .legend { display: none; }
   .buspanel { left: 12px; right: 68px; top: 12px; bottom: auto; width: auto; padding: 10px 12px; gap: 8px; }
   .buspanel .bp-note { display: none; }
+  .commute-legend { top: auto; bottom: calc(44% + 12px); left: 12px; right: 12px; width: auto; }
   .hazard-note { top: auto; bottom: calc(44% + 12px); width: calc(100% - 24px); }
   .leaflet-bottom.leaflet-right { bottom: 44%; }
   .drawer { position: fixed; inset: 0 0 var(--bottomnav) 0; width: auto; z-index: 1200; box-shadow: none; }
