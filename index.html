@@ -11,7 +11,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/vendor/leaflet.css">
-<link rel="stylesheet" href="assets/style.css">
+<script>
+  // デプロイ直後に古い style.css / app.js がブラウザに残って画面と食い違わないよう、毎回新しく読み込む
+  window.ASSET_V = Date.now().toString(36);
+  document.write('<link rel="stylesheet" href="assets/style.css?v=' + window.ASSET_V + '">');
+</script>
 </head>
 <body>
 <header class="appbar">
@@ -189,6 +193,6 @@
 
 <script src="assets/vendor/leaflet.js"></script>
 <script src="assets/vendor/chart.umd.min.js"></script>
-<script src="assets/app.js"></script>
+<script>document.write('<script src="assets/app.js?v=' + window.ASSET_V + '"><\/script>');</script>
 </body>
 </html>

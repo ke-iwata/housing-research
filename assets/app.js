@@ -222,6 +222,7 @@
   let busStops = new Map(), busEdges = [];
 
   function initBus() {
+    if (!$("#lyr-bus") || !$("#buspanel")) return;
     if (!bus || !bus.stops) { $("#lyr-bus").closest("label").hidden = true; return; }
     map.createPane("bus").style.zIndex = 380;
     busRenderer = L.canvas({ pane: "bus", padding: 0.3 });
@@ -351,6 +352,7 @@
   };
 
   function initEnv() {
+    if (!$("#lyr-commute") || !$("#commute-legend")) return; // 古い index.html と組み合わさったとき
     const hideLabel = (id) => ($(id).closest("label").hidden = true);
     const bind = (id, layer, extra) => {
       const sync = () => { $(id).checked ? layer.addTo(map) : map.removeLayer(layer); if (extra) extra(); };
