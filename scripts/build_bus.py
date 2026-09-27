@@ -128,8 +128,18 @@ KEISEI_ALIAS = {
 }
 
 
+def tokyo_to_wgs84(lat, lng):
+    """旧日本測地系（Tokyo Datum）→ 世界測地系（WGS84）の近似換算（関東で誤差数m程度）"""
+    return (lat - 0.00010695 * lat + 0.000017464 * lng + 0.0046017,
+            lng - 0.000046038 * lat - 0.000083043 * lng + 0.010040)
+
+
 def load_keisei(path, acc):
     d = json.loads(Path(path).read_text(encoding="utf-8"))
+    # 時刻表サイトの停留所座標は旧日本測地系なので、そのままだと南東に約450mずれる。世界測地系に換算する
+    for s in d["stops"].values():
+        if s.get("lat") is not None:
+            s["lat"], s["lng"] = (round(v, 6) for v in tokyo_to_wgs84(s["lat"], s["lng"]))
     for sid, s in d["stops"].items():
         if s.get("lat") is not None:
             acc.stops[f"k{sid}"] = {"name": s["name"], "lat": s["lat"], "lng": s["lng"], "op": "keisei"}
