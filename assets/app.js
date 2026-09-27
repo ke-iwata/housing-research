@@ -393,6 +393,21 @@
       bind("#lyr-es", districtLayer(poi.elementary_districts, "#7c4dcc", "6 4"));
       bind("#lyr-jhs", districtLayer(poi.junior_districts, "#0e7490", null));
     } else ["#lyr-schools", "#lyr-es", "#lyr-jhs"].forEach(hideLabel);
+
+    if (poi && poi.shops) {
+      const osm = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+      const shopLayer = (t) => {
+        const g = L.layerGroup();
+        poi.shops.filter((x) => x.t === t).forEach((x) =>
+          L.marker([x.lat, x.lng], { keyboard: false, icon: L.divIcon({ className: "school-icon", html: `<div class="shop ${t}"></div>`, iconSize: [0, 0] }) })
+            .bindTooltip(esc(x.n), { className: "bus-tip", direction: "top", offset: [0, -6] })
+            .addTo(g));
+        g.getAttribution = () => osm;
+        return g;
+      };
+      bind("#lyr-super", shopLayer("s"), () => ($("#lg-super").hidden = !$("#lyr-super").checked));
+      bind("#lyr-conv", shopLayer("c"), () => ($("#lg-conv").hidden = !$("#lyr-conv").checked));
+    } else ["#lyr-super", "#lyr-conv"].forEach(hideLabel);
   }
 
   function envHtml(x) {
@@ -408,7 +423,14 @@
       if (ne) rows.push(`<div class="env-row"><span>最寄りの小学校</span><b>${esc(ne.s.name)} 約${Math.round(ne.m / 10) * 10}m</b></div>`);
       if (nj) rows.push(`<div class="env-row"><span>最寄りの中学校</span><b>${esc(nj.s.name)} 約${Math.round(nj.m / 10) * 10}m</b></div>`);
     }
-    return `<div class="d-sec"><h3>学区・通勤</h3><div class="env">${rows.join("")}</div><p class="d-note" style="font-size:11px;color:var(--muted)">物件の位置は丁目の代表点なので、学区の境目付近は掲載元や区の通学区域で確認してください。学区は2021年度のデータです。</p></div>`;
+    if (poi && poi.shops) {
+      const near = (t) => poi.shops.filter((s) => s.t === t).map((s) => ({ s, m: Math.hypot((s.lat - x.lat) * 111000, (s.lng - x.lng) * 90400) })).sort((a, b) => a.m - b.m);
+      [["s", "スーパー"], ["c", "コンビニ"]].forEach(([t, label]) => {
+        const list = near(t), n = list.filter((v) => v.m <= 500).length, f = list[0];
+        if (f) rows.push(`<div class="env-row"><span>${label}（500m以内）</span><b>${n}件<br><small style="font-weight:500;color:var(--muted)">最寄り ${esc(f.s.n)} 約${Math.round(f.m / 10) * 10}m</small></b></div>`);
+      });
+    }
+    return `<div class="d-sec"><h3>学区・通勤・買い物</h3><div class="env">${rows.join("")}</div><p class="d-note" style="font-size:11px;color:var(--muted)">物件の位置は丁目の代表点なので、学区の境目付近は掲載元や区の通学区域で確認してください。学区は2021年度、お店は OpenStreetMap のデータです（開店・閉店が反映されていないことがあります）。</p></div>`;
   }
 
   function renderMapView() {

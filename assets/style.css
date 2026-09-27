@@ -178,6 +178,11 @@ body:not([data-view="map"]) .search { visibility: hidden; }
 .school { position: absolute; left: 0; top: 0; transform: translate(-50%, -50%); width: 20px; height: 20px; border-radius: 6px; display: grid; place-items: center; color: #fff; font: 800 11px/1 var(--font); box-shadow: 0 0 0 2px #fff, 0 2px 6px rgba(20,32,28,.2); }
 .school.es { background: #7c4dcc; }
 .school.jhs { background: #0e7490; }
+.shop { position: absolute; left: 0; top: 0; transform: translate(-50%, -50%); border-radius: 50%; box-shadow: 0 0 0 2px #fff, 0 1px 4px rgba(20,32,28,.25); }
+.shop.s { width: 14px; height: 14px; background: #2e7d32; }
+.shop.c { width: 10px; height: 10px; background: #ef6c00; }
+.lg-super { background: #2e7d32; }
+.lg-conv { background: #ef6c00; }
 .env { display: flex; flex-direction: column; gap: 8px; }
 .env-row { display: flex; justify-content: space-between; gap: 10px; padding: 10px 12px; border-radius: 10px; background: var(--sub); font-size: 13px; }
 .env-row span { color: var(--muted); white-space: nowrap; }

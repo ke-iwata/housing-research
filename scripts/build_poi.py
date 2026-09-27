@@ -2,13 +2,16 @@
 """江戸川区の小中学校と学区（小学校区・中学校区）をまとめ、data/poi.json を作る。
 
 使い方:
-  python3 scripts/build_poi.py --dir <国土数値情報を展開したフォルダ>
+  python3 scripts/build_poi.py --dir <国土数値情報を展開したフォルダ> [--osm shops.json]
 
 入力（国土数値情報・国土交通省、2021年度版。東京都分）
 - 学校       P29-21_13_GML.zip  https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P29-v2_0.html
 - 小学校区   A27-21_13_GML.zip  https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A27-v3_0.html
 - 中学校区   A32-21_13_GML.zip  https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A32-v3_0.html
 それぞれ zip を展開した中の *.geojson を読む（測地系は JGD2011。地図の WGS84 と実用上同じ）。
+
+コンビニ・スーパー（任意）: OpenStreetMap の Overpass API で取得した JSON（© OpenStreetMap contributors, ODbL）
+  [out:json][bbox:35.63,139.83,35.76,139.93];(nwr["shop"="convenience"];nwr["shop"="supermarket"];);out center tags;
 
 学区は年度によって変わることがあるので、最終的には区の学区表で確認すること。
 年に1回程度、新しい版が出たら実行する（日次ルーチンでは触らない）。
@@ -53,9 +56,20 @@ def districts(features, key):
     return sorted(res, key=lambda d: d["school"])
 
 
+def shops(path):
+    res = []
+    for e in json.loads(Path(path).read_text(encoding="utf-8"))["elements"]:
+        t = e.get("tags", {})
+        lat, lng = (e["lat"], e["lon"]) if "lat" in e else (e["center"]["lat"], e["center"]["lon"])
+        name = t.get("name:ja") or t.get("name") or t.get("brand:ja") or t.get("brand") or ("コンビニ" if t.get("shop") == "convenience" else "スーパー")
+        res.append({"n": name, "t": "c" if t.get("shop") == "convenience" else "s", "lat": round(lat, 6), "lng": round(lng, 6)})
+    return sorted(res, key=lambda x: (x["t"], x["n"]))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dir", required=True, help="国土数値情報の zip を展開したフォルダ")
+    ap.add_argument("--osm", help="OpenStreetMap（Overpass API）のコンビニ・スーパーの JSON")
     args = ap.parse_args()
     schools = []
     for f in find(args.dir, "P29-21"):
@@ -72,8 +86,11 @@ def main():
         "elementary_districts": districts(find(args.dir, "A27-21"), "A27"),
         "junior_districts": districts(find(args.dir, "A32-21"), "A32"),
     }
+    if args.osm:
+        out["shops"] = shops(args.osm)
+        out["sources"].append({"label": "コンビニ・スーパー：© OpenStreetMap contributors（ODbL）", "url": "https://www.openstreetmap.org/copyright"})
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    print(f"{OUT.relative_to(ROOT)}: 学校 {len(schools)} / 小学校区 {len(out['elementary_districts'])} / 中学校区 {len(out['junior_districts'])} / {OUT.stat().st_size // 1024} KB")
+    print(f"{OUT.relative_to(ROOT)}: 店舗 {len(out.get('shops', []))} / 学校 {len(schools)} / 小学校区 {len(out['elementary_districts'])} / 中学校区 {len(out['junior_districts'])} / {OUT.stat().st_size // 1024} KB")
 
 
 if __name__ == "__main__":
