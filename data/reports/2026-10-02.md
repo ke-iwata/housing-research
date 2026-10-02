@@ -27,7 +27,7 @@
 | 江戸川1丁目 **新着** | 瑞江駅 徒歩13分／「江戸川一丁目」停 徒歩3分 | 7,980万円 | 116.46㎡/98.26㎡ | 4LDK | 1台（カースペース） | 惜しい（価格） | [LIFULL HOME'S](https://www.homes.co.jp/kodate/b-1202400001435/)・[SUUMO](https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21462098/) |
 | 南篠崎町1丁目 **新着** | 瑞江駅 徒歩17分／「王子マテリア」停 徒歩1分 | 6,880万円 | 101.26㎡/88.02㎡ | 4LDK | あり（台数不明） | 惜しい（延床） | [LIFULL HOME'S](https://www.homes.co.jp/kodate/b-1339690006707/) |
 | 篠崎町4丁目 **新着・中古** | 篠崎駅 徒歩15分 | 5,480万円 | 119.23㎡/87.04㎡ | 4LDK | あり | 惜しい（中古・2006年築） | [三井のリハウス](https://www.rehouse.co.jp/buy/s_kodate/bkdetail/FU1BRA02/) |
-| 江戸川3丁目 **値下げ** | 篠崎駅・瑞江駅方面 | 6,090→5,990万円 | 114.71㎡/73.77㎡ | 3LDK+納戸 | 車庫 | match ○ | [SUUMO](https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21530446/)・[アットホーム](https://www.athome.co.jp/kodate/1168008329/) |
+| 江戸川3丁目 **値下げ** | 瑞江駅 徒歩17分 | 6,090→5,990万円 | 114.71㎡/73.77㎡ | 3LDK+納戸 | 1台 | match ○ | [SUUMO](https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21530446/)・[アットホーム](https://www.athome.co.jp/kodate/1168008329/) |
 
 ### 登録内容を更新した物件
 - 江戸川1丁目 115.01㎡：SUUMOの旧URLが404なので、掲載中の nc_21524281 に差し替えました。
