@@ -491,4 +491,43 @@ body:not([data-view="map"]) .search { visibility: hidden; }
   .report-side .side-card { display: none; }
   .r-title { font-size: 24px; }
   .r-sec { padding: 18px 16px; }
+
+  /* 相場・レポートの数字タイル：小さめにして2列（レポートは4つを1列に並べる） */
+  .page-head { margin-bottom: 14px; }
+  .page-head .seg { flex: none; }
+  .kpi { padding: 12px 14px; gap: 4px; border-radius: 14px; }
+  .kpi-label { font-size: 11px; line-height: 1.4; }
+  .kpi-value { font-size: 22px; }
+  .kpi-value small { font-size: 12px; }
+  .kpi .badge { max-width: 100%; white-space: normal; font-size: 11px; line-height: 1.4; height: auto; padding: 3px 8px; }
+  .r-kpis { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+  .r-kpis .kpi { padding: 10px 10px; }
+  .r-kpis .kpi-value { font-size: 20px; }
+  .card-head { align-items: center; }
+  .card h2 { font-size: 16px; }
+  .chart-box.tall { height: 280px; }
+
+  /* バックナンバーは細いチップ */
+  .backnumbers { gap: 6px; margin: 0 -14px; padding: 2px 14px 4px; scrollbar-width: none; }
+  .backnumbers::-webkit-scrollbar { display: none; }
+  .backnumbers button { padding: 8px 12px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--line); }
+  .backnumbers button span { display: none; }
+  .backnumbers b { font-size: 13px; }
+  .report-side .side-title { display: none; }
+  .r-title { font-size: 21px; }
+  .r-sec > h2 { font-size: 16px; }
+  .r-sec h3 { font-size: 14px; }
+  .r-sec p, .r-sec ul, .r-sec ol { font-size: 13.5px; line-height: 1.75; }
+  .r-sec ul, .r-sec ol { padding-left: 18px; }
+
+  /* レポートの表は1行ずつカードにする */
+  .r-sec .table-wrap { overflow: visible; margin: 0; }
+  .r-sec table, .r-sec tbody, .r-sec tr, .r-sec td { display: block; min-width: 0; width: auto; }
+  .r-sec thead { display: none; }
+  .r-sec tr { padding: 10px 12px; margin-bottom: 8px; border-radius: 12px; background: var(--sub); }
+  .r-sec td { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 8px; padding: 3px 0; border: 0; font-size: 13px; line-height: 1.55; }
+  .r-sec td::before { content: attr(data-label); font-size: 11px; font-weight: 700; color: var(--muted); padding-top: 1px; }
+  .r-sec td:first-child { display: block; font-weight: 700; font-size: 14px; padding-bottom: 5px; }
+  .r-sec td:first-child::before { display: none; }
+  .r-sec td .badge { justify-self: start; }
 }

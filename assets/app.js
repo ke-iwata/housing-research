@@ -877,11 +877,13 @@
       if (list) { out.push(`<${list.tag}>${list.items.map((i) => `<li>${inline(i)}</li>`).join("")}</${list.tag}>`); list = null; }
       if (table) {
         const [head, ...body] = table;
-        const cell = (c) => {
+        // data-label はスマホでカード表示にするときの項目名
+        const cell = (c, i) => {
+          const lb = ` data-label="${esc(head[i] || "").replace(/\*\*/g, "")}"`;
           const m = c.replace(/\*\*/g, "").trim().match(/^(match|near|reference)\s*([◎○△])?$/);
-          if (!m) return `<td>${inline(c)}</td>`;
+          if (!m) return `<td${lb}><span>${inline(c)}</span></td>`;
           const cls = m[1] === "match" ? "match" : m[1] === "near" ? "near" : "";
-          return `<td><span class="badge ${cls}">${STATUS_LABEL[m[1]]}${m[2] ? " " + m[2] : ""}</span></td>`;
+          return `<td${lb}><span class="badge ${cls}">${STATUS_LABEL[m[1]]}${m[2] ? " " + m[2] : ""}</span></td>`;
         };
         out.push(`<div class="table-wrap"><table><thead><tr>${head.map((c) => `<th>${inline(c)}</th>`).join("")}</tr></thead><tbody>${body.map((r) => `<tr>${r.map(cell).join("")}</tr>`).join("")}</tbody></table></div>`);
         table = null;
