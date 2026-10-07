@@ -198,10 +198,13 @@
     active().filter((x) => x.lat != null && x.status === "match").forEach((x) => pts.push([x.lat, x.lng]));
     const mobile = window.matchMedia("(max-width: 860px)").matches;
     if (mobile) $("#layers").open = false;
+    // スマホ：レイヤーのパネルは地図をタップしたら閉じる。浸水想定の注意書きはタップで全文
+    map.on("click", () => { if (window.matchMedia("(max-width: 860px)").matches) $("#layers").open = false; });
+    $("#hazard-note").addEventListener("click", (e) => { const b = e.currentTarget; b.setAttribute("aria-expanded", b.getAttribute("aria-expanded") !== "true"); });
     if (pts.length) {
       const h = $("#map").clientHeight;
       map.fitBounds(L.latLngBounds(pts), mobile
-        ? { paddingTopLeft: [16, 60], paddingBottomRight: [16, Math.round(h * 0.44) + 16] }
+        ? { paddingTopLeft: [16, 60], paddingBottomRight: [16, Math.round(h * 0.36) + 16] }
         : { paddingTopLeft: [24, 24], paddingBottomRight: [240, 24] });
     }
     map.on("zoomend", () => renderPins());
@@ -556,7 +559,7 @@
     if (opts.fly) {
       // スマホは下半分を一覧シートが覆うので、物件が見える位置（上寄り）に中心をずらす
       const zoom = Math.max(map.getZoom(), 15);
-      const shift = window.matchMedia("(max-width: 860px)").matches ? $("#map").clientHeight * 0.22 : 0;
+      const shift = window.matchMedia("(max-width: 860px)").matches ? $("#map").clientHeight * 0.18 : 0;
       map.flyTo(map.unproject(map.project([x.lat, x.lng], zoom).add([0, shift]), zoom), zoom, { duration: 0.6 });
     }
     popup.setLatLng([x.lat, x.lng]).setContent(popupHtml(x)).openOn(map);

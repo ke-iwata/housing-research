@@ -64,7 +64,9 @@
         <summary class="float-title">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg>
           <span>レイヤー</span>
+          <em class="layers-close">閉じる</em>
         </summary>
+        <div class="layers-body">
         <label><input type="checkbox" id="lyr-zones" checked>候補エリア</label>
         <label><input type="checkbox" id="lyr-bus" checked>バス路線と本数</label>
         <label><input type="checkbox" id="lyr-stations" checked>駅</label>
@@ -76,7 +78,9 @@
         <label><input type="checkbox" id="lyr-jhs">中学校区</label>
         <label><input type="checkbox" id="lyr-flood">洪水 浸水想定</label>
         <label><input type="checkbox" id="lyr-tide">高潮 浸水想定</label>
+        </div>
       </details>
+      <div class="floatstack">
       <div class="float buspanel" id="buspanel" hidden>
         <div class="bp-head">
           <span class="float-title">バスの本数</span>
@@ -95,6 +99,8 @@
         <div class="cl-scale" id="commute-scale"></div>
         <p class="bp-note">バス・電車・徒歩の組み合わせで最も早いもの</p>
       </div>
+      <button type="button" class="float hazard-note" id="hazard-note" hidden aria-expanded="false"><b>浸水想定</b><span class="hn-short">：色が濃いほど深い想定</span><span class="hn-long">は「重ねるハザードマップ」（想定最大規模）。色が濃いほど深い想定です。正確な深さは区のハザードマップで確認してください。</span></button>
+      </div>
       <div class="float legend" id="legend">
         <span><i class="lg lg-match"></i>条件合致</span>
         <span><i class="lg lg-near"></i>惜しい</span>
@@ -103,7 +109,6 @@
         <span id="lg-super" hidden><i class="lg lg-super"></i>スーパー</span>
         <span id="lg-conv" hidden><i class="lg lg-conv"></i>コンビニ</span>
       </div>
-      <p class="float hazard-note" id="hazard-note" hidden>浸水想定は「重ねるハザードマップ」（想定最大規模）。色が濃いほど深い想定です。正確な深さは区のハザードマップで確認してください。</p>
 
       <section class="drawer" id="drawer" aria-label="物件の詳細" hidden>
         <div class="drawer-bar">
