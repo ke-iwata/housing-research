@@ -115,5 +115,14 @@
     "new": 0,
     "median_price_match": 6290,
     "median_unit_price": 60.19
+  },
+  {
+    "date": "2026-10-08",
+    "total": 75,
+    "match": 28,
+    "near": 32,
+    "new": 0,
+    "median_price_match": 6390.0,
+    "median_unit_price": 60.21
   }
 ]
