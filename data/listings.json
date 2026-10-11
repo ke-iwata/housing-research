@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-10T09:30:00+09:00",
-  "summary": "新着はなし。東葛西1丁目 100.6㎡（参考）が8,350万→8,080万円に値下げ。大杉3丁目 112.99㎡（5,980万円）は三井のリハウスで「掲載終了か成約済み」表示になったので、気になるなら早めに問い合わせを。イチオシは引き続き南篠崎町1丁目 128.96㎡（6,990万円・◎）と春江町2丁目 134.16㎡（7,498万円・5LDK）。",
+  "updated_at": "2026-10-11T09:45:00+09:00",
+  "summary": "新着はなし。値下げ2件：江戸川1丁目 115.97㎡（3LDK+納戸・match）が6,880万→6,480万円、東小岩1丁目 117.58㎡（4LDK・惜しい）が7,999万→7,699万円。イチオシは南篠崎町1丁目 128.96㎡（6,990万円・◎）と、値下げで予算に余裕が出た江戸川1丁目 115.97㎡。",
   "source_status": {
     "LIFULL HOME'S": "ok",
     "アットホーム": "ok",
@@ -42,7 +42,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -77,7 +77,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -128,7 +128,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -183,7 +183,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -234,7 +234,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -277,7 +277,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -324,7 +324,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -371,7 +371,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -410,7 +410,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -444,12 +444,16 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_20474989/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/6991361260/"
         }
       ],
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -461,7 +465,7 @@
         }
       ],
       "active": true,
-      "note": "9/27 値下げ（8,599→8,199万円）。三井のリハウスも8,199万円に改定。予算外。9/30 三井のリハウスは掲載終了、SUUMOの分譲ページからもこの住戸が消えた（LIFULL HOME'Sのみ掲載）",
+      "note": "9/27 値下げ（8,599→8,199万円）。三井のリハウスも8,199万円に改定。予算外。9/30 三井のリハウスは掲載終了、SUUMOの分譲ページからもこの住戸が消えた（LIFULL HOME'Sのみ掲載）／10/11 SUUMOの分譲ページ（nc_20474989）は97〜100㎡の住戸だけになった。アットホーム（6991361260）で8,199万円の掲載を確認して掲載元に追加",
       "missed": 0
     },
     {
@@ -492,7 +496,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -535,7 +539,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -578,7 +582,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -625,7 +629,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -680,7 +684,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -727,7 +731,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -774,7 +778,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -813,7 +817,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -856,7 +860,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -874,7 +878,7 @@
       "zone": "first",
       "lat": 35.687938,
       "lng": 139.90653,
-      "price_man": 6880,
+      "price_man": 6480,
       "building_m2": 115.97,
       "land_m2": 90.56,
       "layout": "3LDK+納戸",
@@ -895,16 +899,20 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
           "price_man": 6880
+        },
+        {
+          "date": "2026-10-11",
+          "price_man": 6480
         }
       ],
       "active": true,
       "missed": 0,
-      "note": "第一候補エリア。完成済みで早期入居可／10/7 アットホームの掲載（1070687898）が404のため別業者の掲載（1167679631）に差し替え／10/9 アットホームの掲載が404のため掲載元から外した"
+      "note": "第一候補エリア。完成済みで早期入居可／10/7 アットホームの掲載（1070687898）が404のため別業者の掲載（1167679631）に差し替え／10/9 アットホームの掲載が404のため掲載元から外した／10/11 値下げ（6,880→6,480万円・SUUMO「価格更新」10/10・HOME'S詳細ページで確認。アットホームの別業者掲載は6,880万円のまま）"
     },
     {
       "id": "edogawa1-124",
@@ -938,7 +946,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -985,7 +993,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1036,7 +1044,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1083,7 +1091,7 @@
       "status": "match",
       "grade": "◎",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1130,7 +1138,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1177,7 +1185,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1220,7 +1228,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1263,7 +1271,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1314,7 +1322,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1365,7 +1373,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1408,7 +1416,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1447,7 +1455,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1490,7 +1498,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1537,7 +1545,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1580,7 +1588,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1615,7 +1623,7 @@
       "status": "match",
       "grade": "◎",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1662,7 +1670,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1713,7 +1721,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1752,7 +1760,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1799,7 +1807,7 @@
       "status": "match",
       "grade": "△",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1838,7 +1846,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1881,7 +1889,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1920,7 +1928,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1942,7 +1950,7 @@
         }
       ],
       "active": true,
-      "missed": 0,
+      "missed": 1,
       "id": "nishimizue4-114",
       "address": "東京都江戸川区西瑞江4丁目",
       "town": "西瑞江",
@@ -1964,12 +1972,12 @@
         }
       ],
       "status": "near",
-      "note": "価格が上限を80万円超過。木造3階建て・間口13.6m。座標は西瑞江の代表点（GSI取得不可）"
+      "note": "価格が上限を80万円超過。木造3階建て・間口13.6m。座標は西瑞江の代表点（GSI取得不可）／10/11 HOME'Sの詳細ページが404・一覧にもなし（掲載終了の可能性・1回目）"
     },
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2008,7 +2016,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2051,7 +2059,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2094,7 +2102,7 @@
     {
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2129,7 +2137,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2164,7 +2172,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2207,7 +2215,7 @@
     {
       "grade": "◎",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2246,7 +2254,7 @@
     {
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2285,7 +2293,7 @@
     {
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2328,7 +2336,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2371,7 +2379,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2415,7 +2423,7 @@
       "bus": null,
       "grade": "○",
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2454,7 +2462,7 @@
       "bus": "「北篠崎」停 徒歩6分（系統名は記載なし）",
       "grade": null,
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2489,7 +2497,7 @@
       "bus": null,
       "grade": null,
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2524,7 +2532,7 @@
       "bus": null,
       "grade": null,
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2559,7 +2567,7 @@
       "bus": null,
       "grade": null,
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2618,7 +2626,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-29",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-09-29",
@@ -2668,7 +2676,7 @@
       "note": "9/30 新着。候補エリア外（新小岩駅・船堀駅のバス便エリア）。全15棟の分譲の1棟、土地70㎡。同じ分譲の113㎡・5,680万円の棟は駐車場なし。バス停は未確認（近くの別分譲は新小岩駅バス11分「東小松川一丁目」）",
       "grade": "○",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "active": true,
       "missed": 0
     },
@@ -2703,7 +2711,7 @@
       "note": "9/30 新着。延床100.59㎡が惜しい（延床のみ外れる）。土地103㎡・駐車2台・南側道路。篠崎駅圏で南篠崎町の隣。日建 第11期プレミアムガーデンコート篠崎 12号棟（全10棟）",
       "grade": null,
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "active": true,
       "missed": 0
     },
@@ -2746,7 +2754,7 @@
       "note": "リーブルガーデン篠崎駅（全14棟）の4号棟。shinozaki3-115（14号棟）と同じ分譲。土地71.27㎡で、shinozaki3-119（LIFULL HOME'S・5,890万円・119.31㎡・土地71.28㎡）と同じ住戸の可能性あり。駐車場は台数要確認",
       "grade": "○",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "active": true,
       "missed": 0
     },
@@ -2785,7 +2793,7 @@
       "note": "リーブルガーデン篠崎駅の10号棟（3SLDK+2WIC）。shinozaki3-115と同じ分譲。駐車場は台数要確認",
       "grade": "○",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "active": true,
       "missed": 0
     },
@@ -2820,14 +2828,14 @@
       "note": "予算外の参考。土地117.88㎡と広い2階建。南側3.8mの私道に接道",
       "grade": null,
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "active": true,
       "missed": 0
     },
     {
       "grade": "○",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-10-02",
@@ -2866,7 +2874,7 @@
     {
       "grade": null,
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-10-02",
@@ -2901,7 +2909,7 @@
     {
       "grade": null,
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-10-02",
@@ -2944,7 +2952,7 @@
     {
       "grade": null,
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-10-02",
@@ -2974,7 +2982,7 @@
         }
       ],
       "status": "near",
-      "note": "中古（2006年築・3階建て）だが条件は良いので候補に追加。引渡は2027年5月下旬以降"
+      "note": "中古（2006年築・3階建て）だが条件は良いので候補に追加。引渡は2027年5月下旬以降／10/11 三井のリハウスの一覧には出ないが、詳細ページは5,480万円で掲載中"
     },
     {
       "id": "matsushima4-114",
@@ -3008,7 +3016,7 @@
       "status": "match",
       "grade": "△",
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-10-03",
@@ -3054,7 +3062,7 @@
       "note": "エリア外。5,680万円と安く条件はすべて満たすが、3階建で土地56.74㎡と狭い。アットホームは駐車場欄「－」（SUUMOは1台・ハイルーフ可）",
       "grade": "○",
       "first_seen": "2026-10-04",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "active": true,
       "missed": 0
     },
@@ -3065,7 +3073,7 @@
       "zone": "other",
       "lat": 35.720993,
       "lng": 139.892426,
-      "price_man": 7999,
+      "price_man": 7699,
       "building_m2": 117.58,
       "land_m2": 101.23,
       "layout": "4LDK",
@@ -3092,12 +3100,16 @@
         {
           "date": "2026-10-04",
           "price_man": 7999
+        },
+        {
+          "date": "2026-10-11",
+          "price_man": 7699
         }
       ],
-      "note": "エリア外。価格が上限を約500万円超える。角地・2階建てで土地101㎡と広く、ビルトインガレージ付き",
+      "note": "エリア外。価格が上限を約500万円超える。角地・2階建てで土地101㎡と広く、ビルトインガレージ付き／10/11 値下げ（7,999→7,699万円・SUUMO「価格更新」10/10・アットホームで確認。HOME'Sは7,999万円のまま）",
       "grade": null,
       "first_seen": "2026-10-04",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "active": true,
       "missed": 0
     },
@@ -3129,7 +3141,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-11",
       "price_history": [
         {
           "date": "2026-10-05",
