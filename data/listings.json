@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-19T10:30:00+09:00",
-  "summary": "新着は大杉4丁目の分譲3戸と上篠崎1丁目C号棟の4件で、うち大杉4丁目 121.36㎡（7,388万円・3SLDK・ガレージ）が条件合致です。篠崎町7丁目 128.84㎡は8,699万円に値下げしました。イチオシは引き続き南篠崎町1丁目 128.96㎡（6,880万円・4LDK）です。",
+  "updated_at": "2026-10-20T10:30:00+09:00",
+  "summary": "新着はありません。江戸川3丁目 114.71㎡（3LDK+納戸・駐車1台）が5,880万円から5,680万円に値下げしました。イチオシは引き続き南篠崎町1丁目 128.96㎡（6,880万円・4LDK）です。",
   "source_status": {
     "LIFULL HOME'S": "ok",
     "アットホーム": "ok",
@@ -42,7 +42,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -93,7 +93,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -152,7 +152,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -207,7 +207,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -250,7 +250,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -301,7 +301,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -356,7 +356,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -399,7 +399,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -438,7 +438,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -481,7 +481,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -528,7 +528,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -579,7 +579,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -634,7 +634,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -681,7 +681,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -728,7 +728,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -775,7 +775,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -818,7 +818,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -861,7 +861,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -908,7 +908,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -926,7 +926,7 @@
       "zone": "first",
       "lat": 35.684483,
       "lng": 139.892776,
-      "price_man": 5880,
+      "price_man": 5680,
       "building_m2": 114.71,
       "land_m2": 73.77,
       "layout": "3LDK+納戸",
@@ -955,7 +955,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -972,11 +972,15 @@
         {
           "date": "2026-10-16",
           "price_man": 5880
+        },
+        {
+          "date": "2026-10-20",
+          "price_man": 5680
         }
       ],
       "active": true,
       "missed": 0,
-      "note": "第一候補エリア。メルディア一之江。価格に余裕。ハウスプラザ掲載分（SUUMO・アットホーム）は5,990万円表示。9/30 SUUMO・アットホームの別掲載は5,990万円（値下げの可能性・要確認）。10/2 アットホーム・SUUMOの一部掲載で5,990万円に値下げ（他社は6,090万円のまま）／10/4 HOME'Sと SUUMO の一部（nc_20683030）が6,090万円表示。アットホーム・SUUMO（nc_21530446）は5,990万円のまま／10/13 HOME'S・SUUMO（2掲載）・アットホームがすべて6,090万円表示にそろったため6,090万円に更新（値上げ）／10/16 値下げ（6,090→5,880万円・HOME'S・SUUMO・アットホームで確認）"
+      "note": "第一候補エリア。メルディア一之江。価格に余裕。ハウスプラザ掲載分（SUUMO・アットホーム）は5,990万円表示。9/30 SUUMO・アットホームの別掲載は5,990万円（値下げの可能性・要確認）。10/2 アットホーム・SUUMOの一部掲載で5,990万円に値下げ（他社は6,090万円のまま）／10/4 HOME'Sと SUUMO の一部（nc_20683030）が6,090万円表示。アットホーム・SUUMO（nc_21530446）は5,990万円のまま／10/13 HOME'S・SUUMO（2掲載）・アットホームがすべて6,090万円表示にそろったため6,090万円に更新（値上げ）／10/16 値下げ（6,090→5,880万円・HOME'S・SUUMO・アットホームで確認）／10/20 値下げ（5,880→5,680万円・HOME'S詳細とSUUMO nc_20683030で確認。SUUMO nc_21530446・アットホームは5,880万円のまま）"
     },
     {
       "id": "edogawa3-104",
@@ -1014,7 +1018,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1027,7 +1031,7 @@
       ],
       "active": true,
       "missed": 0,
-      "note": "延床が110㎡に届かず。住宅情報館の一覧では3LDK表記（要確認）／10/16 値下げ（6,090→5,880万円・HOME'S・SUUMO・住宅情報館で確認）"
+      "note": "延床が110㎡に届かず。住宅情報館の一覧では3LDK表記（要確認）／10/16 値下げ（6,090→5,880万円・HOME'S・SUUMO・住宅情報館で確認）／10/20 SUUMO（nc_20829825）は5,680万円表示（HOME'Sほかは5,880万円。登録価格は据え置き）"
     },
     {
       "id": "minamishinozaki1-128",
@@ -1065,7 +1069,7 @@
       "status": "match",
       "grade": "◎",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1116,7 +1120,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1163,7 +1167,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1210,7 +1214,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1257,7 +1261,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1304,7 +1308,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1355,7 +1359,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1402,7 +1406,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1445,7 +1449,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1488,7 +1492,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1531,8 +1535,8 @@
         }
       ],
       "active": true,
-      "missed": 0,
-      "note": "延床が110㎡に届かず。瑞江駅徒歩8分／10/13 SUUMOの旧掲載（nc_20905999）が404。同じ住戸の新しい掲載（nc_21863731）に差し替え／10/15 住宅情報館の掲載が404になり掲載元から外した。アットホームは別番号（1181312934）に差し替え。SUUMO・HOME'Sは掲載中／10/17 SUUMO（nc_21863731）・HOME'S（b-1230340085449）が404で掲載元から外した。アットホームは掲載中／10/19 アットホームのおすすめ欄に「車庫２台可能」とある（駐車場欄は「－」）"
+      "missed": 1,
+      "note": "延床が110㎡に届かず。瑞江駅徒歩8分／10/13 SUUMOの旧掲載（nc_20905999）が404。同じ住戸の新しい掲載（nc_21863731）に差し替え／10/15 住宅情報館の掲載が404になり掲載元から外した。アットホームは別番号（1181312934）に差し替え。SUUMO・HOME'Sは掲載中／10/17 SUUMO（nc_21863731）・HOME'S（b-1230340085449）が404で掲載元から外した。アットホームは掲載中／10/19 アットホームのおすすめ欄に「車庫２台可能」とある（駐車場欄は「－」）／10/20 アットホーム（1181312934）が404。ほかの掲載元もなし（1回目）"
     },
     {
       "id": "honisshiki3-113",
@@ -1566,7 +1570,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1598,10 +1602,6 @@
           "url": "https://www.homes.co.jp/kodate/b-17067100002141/"
         },
         {
-          "site": "住宅情報館",
-          "url": "https://www.jutakujohokan.co.jp/ikkodate/detail/50286695/"
-        },
-        {
           "site": "LIFULL HOME'S",
           "url": "https://www.homes.co.jp/kodate/b-1435890006711/"
         },
@@ -1613,7 +1613,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1634,7 +1634,7 @@
       ],
       "active": true,
       "missed": 0,
-      "note": "HeartfulTown F号棟。価格が上限を約500万円超過。一之江駅徒歩6分／10/4 値下げ（7,990→7,790万円。SUUMOに明記。HOME'Sは7,990万円のまま）／10/7 7,790→7,990万円に値上げ（HOME'S号棟表・住宅情報館・アットホームで一致。HOME'Sの別業者掲載は7,790万円のまま）／10/13 値下げ（7,990→7,790万円。SUUMO・HOME'S（b-1435890006711、価格更新表示）で確認。一部掲載は7,990万円のまま）。まだ上限を290万円超過／10/15 アットホームの掲載が404になり掲載元から外した／10/19 住宅情報館・アットホームの一覧は7,990万円（HOME'S・SUUMOは7,790万円。据え置き）"
+      "note": "HeartfulTown F号棟。価格が上限を約500万円超過。一之江駅徒歩6分／10/4 値下げ（7,990→7,790万円。SUUMOに明記。HOME'Sは7,990万円のまま）／10/7 7,790→7,990万円に値上げ（HOME'S号棟表・住宅情報館・アットホームで一致。HOME'Sの別業者掲載は7,790万円のまま）／10/13 値下げ（7,990→7,790万円。SUUMO・HOME'S（b-1435890006711、価格更新表示）で確認。一部掲載は7,990万円のまま）。まだ上限を290万円超過／10/15 アットホームの掲載が404になり掲載元から外した／10/19 住宅情報館・アットホームの一覧は7,990万円（HOME'S・SUUMOは7,790万円。据え置き）／10/20 住宅情報館・アットホームの掲載の一部が404で掲載元から外した（ほかの掲載元は掲載中）"
     },
     {
       "id": "shinozaki3-115",
@@ -1672,7 +1672,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1707,7 +1707,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1739,14 +1739,6 @@
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_20158837/"
         },
         {
-          "site": "住宅情報館",
-          "url": "https://www.jutakujohokan.co.jp/ikkodate/detail/50286752/"
-        },
-        {
-          "site": "アットホーム",
-          "url": "https://www.athome.co.jp/kodate/1199342819/"
-        },
-        {
           "site": "LIFULL HOME'S",
           "url": "https://www.homes.co.jp/kodate/b-1518640004673/"
         }
@@ -1754,7 +1746,7 @@
       "status": "match",
       "grade": "△",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1763,7 +1755,7 @@
       ],
       "active": true,
       "missed": 0,
-      "note": "全3棟のC号棟。駐車場要確認（同分譲地A号棟は車庫あり）。三井のリハウス（FU1BGA5D）では延床94.8㎡表記で、車庫を含むかの差とみられる（要確認）／10/4 SUUMOの区画表から消去法で6,990万円の可能性（HOME'S・アットホームは7,090万円のまま。価格は据え置き）／10/7 SUUMOの掲載（nc_20158837）は6,990万円に値下げ表示。住宅情報館・アットホーム・HOME'Sは7,090万円のまま／10/8 SUUMO（nc_20158837）は103.81㎡・110.12㎡の2棟を6,690万・6,990万円で表示。HOME'S・アットホームは7,090万円のまま"
+      "note": "全3棟のC号棟。駐車場要確認（同分譲地A号棟は車庫あり）。三井のリハウス（FU1BGA5D）では延床94.8㎡表記で、車庫を含むかの差とみられる（要確認）／10/4 SUUMOの区画表から消去法で6,990万円の可能性（HOME'S・アットホームは7,090万円のまま。価格は据え置き）／10/7 SUUMOの掲載（nc_20158837）は6,990万円に値下げ表示。住宅情報館・アットホーム・HOME'Sは7,090万円のまま／10/8 SUUMO（nc_20158837）は103.81㎡・110.12㎡の2棟を6,690万・6,990万円で表示。HOME'S・アットホームは7,090万円のまま／10/20 住宅情報館・アットホームの掲載の一部が404で掲載元から外した（ほかの掲載元は掲載中）"
     },
     {
       "id": "minamishinozaki1-119",
@@ -1793,7 +1785,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1836,7 +1828,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1875,7 +1867,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1893,7 +1885,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1918,14 +1910,6 @@
       "completion": "2026年5月（完成済）",
       "sources": [
         {
-          "site": "アットホーム",
-          "url": "https://www.athome.co.jp/kodate/1199342719/"
-        },
-        {
-          "site": "住宅情報館",
-          "url": "https://www.jutakujohokan.co.jp/ikkodate/detail/50286751/"
-        },
-        {
           "site": "LIFULL HOME'S",
           "url": "https://www.homes.co.jp/kodate/b-1518640004672/"
         },
@@ -1935,12 +1919,12 @@
         }
       ],
       "status": "near",
-      "note": "minamishinozaki1-110と同じ全3棟のB号棟。延床が110㎡未満。三井のリハウス（FU1BGA5C）では延床91.39㎡表記（要確認）／10/8 SUUMO（nc_20158837）では6,690万円の表示（ほかは6,790万円のまま）／10/19 SUUMOの号棟別ページではB号棟が6,690万円（HOME'S・アットホームは6,790万円。登録価格は据え置き）"
+      "note": "minamishinozaki1-110と同じ全3棟のB号棟。延床が110㎡未満。三井のリハウス（FU1BGA5C）では延床91.39㎡表記（要確認）／10/8 SUUMO（nc_20158837）では6,690万円の表示（ほかは6,790万円のまま）／10/19 SUUMOの号棟別ページではB号棟が6,690万円（HOME'S・アットホームは6,790万円。登録価格は据え置き）／10/20 住宅情報館・アットホームの掲載の一部が404で掲載元から外した（ほかの掲載元は掲載中）"
     },
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1973,10 +1957,6 @@
           "url": "https://www.homes.co.jp/kodate/b-1435890006709/"
         },
         {
-          "site": "住宅情報館",
-          "url": "https://www.jutakujohokan.co.jp/ikkodate/detail/50286693/"
-        },
-        {
           "site": "アットホーム",
           "url": "https://www.athome.co.jp/kodate/6991799877/"
         },
@@ -1986,12 +1966,12 @@
         }
       ],
       "status": "reference",
-      "note": "ichinoe7-120と同じHeartfulTownのC号棟。延床不足。間取りは2LDK+2S（LIFULL HOME'Sの個別ページは4LDK表記）／10/7 HOME'Sの詳細ページは7,290万円・4LDK表示（同じHOME'Sの号棟表は7,490万円のまま）／10/13 値下げ（7,490→7,290万円。HOME'S詳細・SUUMO・アットホームの一部掲載で確認。7,490万円の掲載も一部に残る）／10/19 住宅情報館の一覧は7,490万円（HOME'Sは7,290万円。据え置き）"
+      "note": "ichinoe7-120と同じHeartfulTownのC号棟。延床不足。間取りは2LDK+2S（LIFULL HOME'Sの個別ページは4LDK表記）／10/7 HOME'Sの詳細ページは7,290万円・4LDK表示（同じHOME'Sの号棟表は7,490万円のまま）／10/13 値下げ（7,490→7,290万円。HOME'S詳細・SUUMO・アットホームの一部掲載で確認。7,490万円の掲載も一部に残る）／10/19 住宅情報館の一覧は7,490万円（HOME'Sは7,290万円。据え置き）／10/20 住宅情報館・アットホームの掲載の一部が404で掲載元から外した（ほかの掲載元は掲載中）"
     },
     {
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2026,7 +2006,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2065,7 +2045,7 @@
     {
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2092,19 +2072,15 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_20458369/"
-        },
-        {
-          "site": "アットホーム",
-          "url": "https://www.athome.co.jp/kodate/6990173208/"
         }
       ],
       "status": "match",
-      "note": "延床は車庫13.22㎡を含む。座標は「西一之江三丁目」停の位置（概略）"
+      "note": "延床は車庫13.22㎡を含む。座標は「西一之江三丁目」停の位置（概略）／10/20 住宅情報館・アットホームの掲載の一部が404で掲載元から外した（ほかの掲載元は掲載中）"
     },
     {
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2147,7 +2123,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2190,7 +2166,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2226,7 +2202,7 @@
       "bus": null,
       "grade": "○",
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2265,7 +2241,7 @@
       "bus": "「北篠崎」停 徒歩6分（系統名は記載なし）",
       "grade": null,
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2304,7 +2280,7 @@
       "bus": null,
       "grade": null,
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2343,7 +2319,7 @@
       "bus": null,
       "grade": null,
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2386,7 +2362,7 @@
       "bus": null,
       "grade": null,
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2412,6 +2388,10 @@
         {
           "site": "アットホーム",
           "url": "https://www.athome.co.jp/kodate/1070623298/"
+        },
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-37052310000664/"
         }
       ],
       "status": "reference",
@@ -2445,7 +2425,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-29",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-09-29",
@@ -2496,12 +2476,12 @@
           "price_man": 5880
         }
       ],
-      "note": "9/30 新着。候補エリア外（新小岩駅・船堀駅のバス便エリア）。全15棟の分譲の1棟、土地70㎡。同じ分譲の113㎡・5,680万円の棟は駐車場なし。バス停は未確認（近くの別分譲は新小岩駅バス11分「東小松川一丁目」）／10/19 HOME'Sの分譲ページでは2号棟・3号棟は駐車場なし、4号棟・15号棟は1台。どの棟か要確認",
+      "note": "9/30 新着。候補エリア外（新小岩駅・船堀駅のバス便エリア）。全15棟の分譲の1棟、土地70㎡。同じ分譲の113㎡・5,680万円の棟は駐車場なし。バス停は未確認（近くの別分譲は新小岩駅バス11分「東小松川一丁目」）／10/19 HOME'Sの分譲ページでは2号棟・3号棟は駐車場なし、4号棟・15号棟は1台。どの棟か要確認／10/20 アットホーム（1182791628）が404。SUUMO（nc_21668942）は107.43㎡・113.33㎡の2戸だけになり、HOME'Sの分譲ページも107〜113㎡の住戸のみ。118.98㎡の住戸は売れた可能性（1回目）",
       "grade": "○",
       "first_seen": "2026-09-30",
       "last_seen": "2026-10-19",
       "active": true,
-      "missed": 0
+      "missed": 1
     },
     {
       "id": "yakouchi2-100",
@@ -2534,7 +2514,7 @@
       "note": "9/30 新着。延床100.59㎡が惜しい（延床のみ外れる）。土地103㎡・駐車2台・南側道路。篠崎駅圏で南篠崎町の隣。日建 第11期プレミアムガーデンコート篠崎 12号棟（全10棟）",
       "grade": null,
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "active": true,
       "missed": 0
     },
@@ -2549,7 +2529,7 @@
       "building_m2": 118.65,
       "land_m2": 71.27,
       "layout": "4LDK",
-      "parking": "あり（台数不明・車庫付き）",
+      "parking": "1台",
       "access": "都営新宿線 篠崎駅 徒歩15分",
       "bus": null,
       "completion": "2026年9月",
@@ -2578,10 +2558,10 @@
           "price_man": 6290
         }
       ],
-      "note": "リーブルガーデン篠崎駅（全14棟）の4号棟。shinozaki3-115（14号棟）と同じ分譲。土地71.27㎡で、shinozaki3-119（LIFULL HOME'S・5,890万円・119.31㎡・土地71.28㎡）と同じ住戸の可能性あり。駐車場は台数要確認",
+      "note": "リーブルガーデン篠崎駅（全14棟）の4号棟。shinozaki3-115（14号棟）と同じ分譲。土地71.27㎡で、shinozaki3-119（LIFULL HOME'S・5,890万円・119.31㎡・土地71.28㎡）と同じ住戸の可能性あり。駐車場は台数要確認／10/20 HOME'S詳細で駐車1台（無料）と確認",
       "grade": "○",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "active": true,
       "missed": 0
     },
@@ -2624,7 +2604,7 @@
       "note": "リーブルガーデン篠崎駅の10号棟（3SLDK+2WIC）。shinozaki3-115と同じ分譲。駐車場は台数要確認",
       "grade": "○",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "active": true,
       "missed": 0
     },
@@ -2663,14 +2643,14 @@
       "note": "予算外の参考。土地117.88㎡と広い2階建。南側3.8mの私道に接道／10/19 三井のリハウスの詳細で駐車2台（車種による）と判明。備考に「建築基準法上の道路に接しておらず、43条2項2号の許可が必要」とあるので要確認",
       "grade": null,
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "active": true,
       "missed": 0
     },
     {
       "grade": "○",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-10-02",
@@ -2709,42 +2689,7 @@
     {
       "grade": null,
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-18",
-      "price_history": [
-        {
-          "date": "2026-10-02",
-          "price_man": 6480
-        }
-      ],
-      "active": true,
-      "missed": 1,
-      "id": "ukita-110",
-      "address": "東京都江戸川区宇喜田町",
-      "town": "宇喜田町",
-      "zone": "other",
-      "lat": 35.676311,
-      "lng": 139.863205,
-      "price_man": 6480,
-      "building_m2": 87.25,
-      "land_m2": 70.21,
-      "layout": "3LDK+納戸",
-      "parking": "あり（台数不明）",
-      "access": "都営新宿線 船堀駅 徒歩12分",
-      "bus": null,
-      "completion": "不明",
-      "sources": [
-        {
-          "site": "SUUMO",
-          "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21859631/"
-        }
-      ],
-      "status": "reference",
-      "note": "エリア外。アットホーム一覧の表記のみ（詳細ページはボットチェックで未確認）。駐車場要確認／10/4 アットホームの延床が87.25㎡（土地70.21㎡・駐車場有）と判明したので reference に変更（登録時の110.43㎡は一覧の読み違いとみられる）／10/17 アットホームの掲載（1134184527）が404（1回目）／10/18 アットホームは2日続けて404だが、SUUMO（nc_21859631）に同じ住戸（6,480万円・87.25㎡・土地70.21㎡）が掲載中なので、掲載元をSUUMOに差し替えて継続／10/19 SUUMO（nc_21859631）も404（1回目）"
-    },
-    {
-      "grade": null,
-      "first_seen": "2026-10-02",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-10-02",
@@ -2791,7 +2736,7 @@
     {
       "grade": null,
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-10-02",
@@ -2859,7 +2804,7 @@
       "status": "match",
       "grade": "△",
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-10-03",
@@ -2913,7 +2858,7 @@
       "note": "エリア外。価格が上限を約500万円超える。角地・2階建てで土地101㎡と広く、ビルトインガレージ付き／10/11 値下げ（7,999→7,699万円・SUUMO「価格更新」10/10・アットホームで確認。HOME'Sは7,999万円のまま）",
       "grade": null,
       "first_seen": "2026-10-04",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "active": true,
       "missed": 0
     },
@@ -2944,12 +2889,16 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21825961/"
+        },
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-17060170011069/"
         }
       ],
       "status": "match",
       "grade": "○",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-10-05",
@@ -2992,7 +2941,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-10-16",
@@ -3027,7 +2976,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-10-17",
@@ -3066,7 +3015,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-10-19",
@@ -3094,10 +3043,6 @@
       "completion": "2026年12月（2027年1月下旬引渡）",
       "sources": [
         {
-          "site": "LIFULL HOME'S",
-          "url": "https://www.homes.co.jp/kodate/b-1518640004732/"
-        },
-        {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21828530/"
         }
@@ -3105,7 +3050,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-10-19",
@@ -3114,7 +3059,7 @@
       ],
       "active": true,
       "missed": 0,
-      "note": "大杉16期。価格が上限を38万円超える"
+      "note": "大杉16期。価格が上限を38万円超える／10/20 HOME'Sの住戸ページが404で掲載元から外した。SUUMOの分譲ページ（nc_21828530）は6,788〜7,538万円で掲載中"
     },
     {
       "id": "osugi4-102",
@@ -3133,10 +3078,6 @@
       "completion": "2026年12月（2027年1月下旬引渡）",
       "sources": [
         {
-          "site": "LIFULL HOME'S",
-          "url": "https://www.homes.co.jp/kodate/b-1518640004733/"
-        },
-        {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21828530/"
         }
@@ -3144,7 +3085,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-10-19",
@@ -3153,7 +3094,7 @@
       ],
       "active": true,
       "missed": 0,
-      "note": "大杉16期。延床102㎡だが土地121㎡と広い"
+      "note": "大杉16期。延床102㎡だが土地121㎡と広い／10/20 HOME'Sの住戸ページが404で掲載元から外した。SUUMOの分譲ページ（nc_21828530）は6,788〜7,538万円で掲載中"
     },
     {
       "id": "kamishinozaki1-105",
@@ -3183,7 +3124,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
       "price_history": [
         {
           "date": "2026-10-19",
@@ -3703,6 +3644,42 @@
       "status": "near",
       "note": "3LDK（納戸なし）。延床は車庫13.66㎡を含む。旧価格6,299万円の表記があり値下げ済み。座標は「北篠崎」停付近（概略）／10/16 HOME'S・SUUMOの詳細ページが404、アットホームの一覧にもない（1回目）／10/17 HOME'S詳細ページは404のまま、SUUMO一覧にもない（2回目）→掲載終了",
       "ended_on": "2026-10-17"
+    },
+    {
+      "grade": null,
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-18",
+      "price_history": [
+        {
+          "date": "2026-10-02",
+          "price_man": 6480
+        }
+      ],
+      "active": false,
+      "missed": 2,
+      "id": "ukita-110",
+      "address": "東京都江戸川区宇喜田町",
+      "town": "宇喜田町",
+      "zone": "other",
+      "lat": 35.676311,
+      "lng": 139.863205,
+      "price_man": 6480,
+      "building_m2": 87.25,
+      "land_m2": 70.21,
+      "layout": "3LDK+納戸",
+      "parking": "あり（台数不明）",
+      "access": "都営新宿線 船堀駅 徒歩12分",
+      "bus": null,
+      "completion": "不明",
+      "sources": [
+        {
+          "site": "SUUMO",
+          "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21859631/"
+        }
+      ],
+      "status": "reference",
+      "note": "エリア外。アットホーム一覧の表記のみ（詳細ページはボットチェックで未確認）。駐車場要確認／10/4 アットホームの延床が87.25㎡（土地70.21㎡・駐車場有）と判明したので reference に変更（登録時の110.43㎡は一覧の読み違いとみられる）／10/17 アットホームの掲載（1134184527）が404（1回目）／10/18 アットホームは2日続けて404だが、SUUMO（nc_21859631）に同じ住戸（6,480万円・87.25㎡・土地70.21㎡）が掲載中なので、掲載元をSUUMOに差し替えて継続／10/19 SUUMO（nc_21859631）も404（1回目）／10/20 SUUMO（nc_21859631）も2日続けて404（2回目）→掲載終了",
+      "ended_on": "2026-10-20"
     }
   ],
   "land": [
