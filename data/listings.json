@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-10-21T10:30:00+09:00",
-  "summary": "新着は瑞江1丁目 112.17㎡（7,480万円・4LDK・駐車2台）の1件です。江戸川3丁目 104.16㎡が5,880万円から5,680万円に、東葛西1丁目 100.6㎡が8,080万円から7,980万円に値下げしました。イチオシは引き続き南篠崎町1丁目 128.96㎡（6,880万円・4LDK）です。",
+  "updated_at": "2026-10-22T09:40:00+09:00",
+  "summary": "今日はSUUMO・LIFULL HOME'S（503）、アットホーム（ボット判定）、住宅情報館（401）が取得できず、三井のリハウスと東急リバブルだけ確認しました。2社で確認できた20件はすべて掲載中で、価格の変更はありません。新着もありません。取得できなかったサイトにしか載っていない物件は、掲載終了の判定（missed）を進めずに前日のまま残しています。イチオシは引き続き南篠崎町1丁目 128.96㎡（6,880万円・4LDK）です。",
   "source_status": {
-    "LIFULL HOME'S": "ok",
-    "アットホーム": "ok",
+    "LIFULL HOME'S": "failed",
+    "アットホーム": "failed",
     "三井のリハウス": "ok",
     "東急リバブル": "ok",
-    "住宅情報館": "ok",
-    "SUUMO": "ok"
+    "住宅情報館": "failed",
+    "SUUMO": "failed"
   },
   "listings": [
     {
@@ -42,7 +42,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -93,7 +93,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -152,7 +152,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -207,7 +207,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -301,7 +301,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -356,7 +356,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -442,7 +442,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -489,7 +489,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -536,7 +536,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -587,7 +587,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -642,7 +642,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -689,7 +689,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -736,7 +736,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -783,7 +783,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -826,7 +826,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1081,7 +1081,7 @@
       "status": "match",
       "grade": "◎",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1418,7 +1418,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2569,7 +2569,7 @@
       "note": "予算外の参考。土地117.88㎡と広い2階建。南側3.8mの私道に接道／10/19 三井のリハウスの詳細で駐車2台（車種による）と判明。備考に「建築基準法上の道路に接しておらず、43条2項2号の許可が必要」とあるので要確認",
       "grade": null,
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "active": true,
       "missed": 0
     },
@@ -2662,7 +2662,7 @@
     {
       "grade": null,
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-10-02",
@@ -2730,7 +2730,7 @@
       "status": "match",
       "grade": "△",
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-22",
       "price_history": [
         {
           "date": "2026-10-03",
