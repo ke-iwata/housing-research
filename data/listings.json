@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-29T10:10:00+09:00",
-  "summary": "新着・値下げ・掲載終了はありません。登録済みの79件はすべてどれかの掲載元で掲載が続いています（掲載元の一部が404になった物件は、別の掲載に差し替えました）。イチオシは南篠崎町1丁目 128.96㎡（6,880万円）と東松本1丁目 118.55㎡（6,999万円）です。",
+  "updated_at": "2026-10-30T10:30:00+09:00",
+  "summary": "新着3件（うち中古2件）・値下げ0件・掲載終了0件。今回から条件の良い中古も候補に入れ、上篠崎1丁目 121.28㎡（中古・2024年築・6,280万円）と篠崎町3丁目 114.46㎡（中古・2024年築・6,800万円・駐車2台）を追加しました。新築は松島2丁目 112.62㎡（6,980万円）が新着で、イチオシは引き続き南篠崎町1丁目 128.96㎡（6,880万円）です。",
   "source_status": {
     "LIFULL HOME'S": "ok",
     "アットホーム": "ok",
@@ -38,7 +38,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -83,13 +83,13 @@
         },
         {
           "site": "アットホーム",
-          "url": "https://www.athome.co.jp/kodate/1162146326/"
+          "url": "https://www.athome.co.jp/kodate/1104542214/"
         }
       ],
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -101,7 +101,7 @@
         }
       ],
       "active": true,
-      "note": "土地103㎡と広め。延床110㎡・4LDKにわずかに届かず／10/9 アットホームの掲載が404のため掲載元から外した／10/19 アットホームは3SLDK表記／10/23 HOME'S（b-17060170010869・駐車2台表記）は6,999万円表示。東急リバブル・SUUMOは7,499万円のままなので登録価格は据え置き（値下げの可能性・要確認）／10/24 値下げ 7,499→6,999万円（HOME'S・アットホーム・SUUMOの詳細ページで確認。東急リバブル・住宅情報館は7,499万円のまま）。SUUMO・アットホームでは3LDK+納戸・駐車2台",
+      "note": "土地103㎡と広め。延床110㎡・4LDKにわずかに届かず／10/9 アットホームの掲載が404のため掲載元から外した／10/19 アットホームは3SLDK表記／10/23 HOME'S（b-17060170010869・駐車2台表記）は6,999万円表示。東急リバブル・SUUMOは7,499万円のままなので登録価格は据え置き（値下げの可能性・要確認）／10/24 値下げ 7,499→6,999万円（HOME'S・アットホーム・SUUMOの詳細ページで確認。東急リバブル・住宅情報館は7,499万円のまま）。SUUMO・アットホームでは3LDK+納戸・駐車2台／10/30 アットホーム（1162146326）が404で別番号（1104542214・6,999万円）に差し替え",
       "missed": 0
     },
     {
@@ -152,7 +152,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -207,7 +207,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -239,10 +239,6 @@
           "url": "https://www.rehouse.co.jp/buy/s_kodate/bkdetail/FU1BGA17/"
         },
         {
-          "site": "住宅情報館",
-          "url": "https://www.jutakujohokan.co.jp/ikkodate/detail/50261947/"
-        },
-        {
           "site": "LIFULL HOME'S",
           "url": "https://www.homes.co.jp/kodate/b-17086370000137/"
         },
@@ -258,7 +254,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -270,7 +266,7 @@
         }
       ],
       "active": true,
-      "note": "9/26 値下げ（5,598→5,398万円・LIFULL HOME'S 9/24更新・住宅情報館・SUUMO複数業者で確認。三井のリハウスは5,598万円のまま）。第一候補エリア。延床・間取り（2LDK+納戸）が不足。ビルトインガレージ1台／10/25 アットホームの旧掲載が404のため、同じ物件の別掲載に差し替え",
+      "note": "9/26 値下げ（5,598→5,398万円・LIFULL HOME'S 9/24更新・住宅情報館・SUUMO複数業者で確認。三井のリハウスは5,598万円のまま）。第一候補エリア。延床・間取り（2LDK+納戸）が不足。ビルトインガレージ1台／10/25 アットホームの旧掲載が404のため、同じ物件の別掲載に差し替え／10/30 住宅情報館（50261947）が404で掲載元から外した（リハウスほかは掲載中）",
       "missed": 0
     },
     {
@@ -313,7 +309,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -356,7 +352,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -394,12 +390,16 @@
         {
           "site": "LIFULL HOME'S",
           "url": "https://www.homes.co.jp/kodate/b-17067100002307/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1168649431/"
         }
       ],
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -446,7 +446,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -488,12 +488,16 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21524281/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1167620531/"
         }
       ],
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -544,7 +548,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -599,7 +603,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -646,7 +650,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -693,7 +697,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -740,7 +744,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-25",
@@ -779,7 +783,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -822,7 +826,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -873,7 +877,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -920,7 +924,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -983,7 +987,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1038,7 +1042,7 @@
       "status": "match",
       "grade": "◎",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1089,7 +1093,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1136,7 +1140,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1187,7 +1191,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1234,7 +1238,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1281,7 +1285,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1332,7 +1336,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1379,7 +1383,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1422,7 +1426,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1465,7 +1469,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1508,7 +1512,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1550,12 +1554,16 @@
         {
           "site": "三井のリハウス",
           "url": "https://www.rehouse.co.jp/buy/s_kodate/bkdetail/FU1BGAA7/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1182804934/"
         }
       ],
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1614,7 +1622,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1653,7 +1661,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1696,7 +1704,7 @@
       "status": "near",
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1735,7 +1743,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1753,7 +1761,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1784,6 +1792,14 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_20158837/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1199342719/"
+        },
+        {
+          "site": "住宅情報館",
+          "url": "https://www.jutakujohokan.co.jp/ikkodate/detail/50286751/"
         }
       ],
       "status": "near",
@@ -1792,7 +1808,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1843,7 +1859,7 @@
     {
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1878,7 +1894,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1917,7 +1933,7 @@
     {
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1948,6 +1964,10 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_20458369/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/6990173208/"
         }
       ],
       "status": "match",
@@ -1956,7 +1976,7 @@
     {
       "grade": "○",
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -1999,7 +2019,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2042,7 +2062,7 @@
     {
       "grade": null,
       "first_seen": "2026-09-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-26",
@@ -2069,6 +2089,10 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21442656/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1195401121/"
         }
       ],
       "status": "near",
@@ -2078,7 +2102,7 @@
       "bus": null,
       "grade": "○",
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2117,7 +2141,7 @@
       "bus": "「北篠崎」停 徒歩6分（系統名は記載なし）",
       "grade": null,
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2156,7 +2180,7 @@
       "bus": null,
       "grade": null,
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2199,7 +2223,7 @@
       "bus": null,
       "grade": null,
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2242,7 +2266,7 @@
       "bus": null,
       "grade": null,
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-27",
@@ -2309,7 +2333,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-09-29",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-09-29",
@@ -2355,7 +2379,7 @@
       "note": "9/30 新着。延床100.59㎡が惜しい（延床のみ外れる）。土地103㎡・駐車2台・南側道路。篠崎駅圏で南篠崎町の隣。日建 第11期プレミアムガーデンコート篠崎 12号棟（全10棟）",
       "grade": null,
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "active": true,
       "missed": 0
     },
@@ -2406,7 +2430,7 @@
       "note": "リーブルガーデン篠崎駅（全14棟）の4号棟。shinozaki3-115（14号棟）と同じ分譲。土地71.27㎡で、shinozaki3-119（LIFULL HOME'S・5,890万円・119.31㎡・土地71.28㎡）と同じ住戸の可能性あり。駐車場は台数要確認／10/20 HOME'S詳細で駐車1台（無料）と確認",
       "grade": "○",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "active": true,
       "missed": 0
     },
@@ -2432,11 +2456,11 @@
         },
         {
           "site": "アットホーム",
-          "url": "https://www.athome.co.jp/kodate/1182268934/"
+          "url": "https://www.athome.co.jp/kodate/1166448331/"
         },
         {
           "site": "LIFULL HOME'S",
-          "url": "https://www.homes.co.jp/kodate/b-1402480027644/"
+          "url": "https://www.homes.co.jp/kodate/b-1448780016231/"
         }
       ],
       "status": "match",
@@ -2446,10 +2470,10 @@
           "price_man": 6090
         }
       ],
-      "note": "リーブルガーデン篠崎駅の10号棟（3SLDK+2WIC）。shinozaki3-115と同じ分譲。駐車場は台数要確認／10/25 HOME'Sの旧掲載が404のため、同じ内容の b-1391790008073 に差し替え／10/29 HOME'Sの掲載が404のため別掲載（b-1402480027644・6,090万円）に差し替え",
+      "note": "リーブルガーデン篠崎駅の10号棟（3SLDK+2WIC）。shinozaki3-115と同じ分譲。駐車場は台数要確認／10/25 HOME'Sの旧掲載が404のため、同じ内容の b-1391790008073 に差し替え／10/29 HOME'Sの掲載が404のため別掲載（b-1402480027644・6,090万円）に差し替え／10/30 HOME'S（b-1402480027644）が404、アットホーム（1182268934）が一覧から消えたため別掲載に差し替え（6,090万円）",
       "grade": "○",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "active": true,
       "missed": 0
     },
@@ -2488,14 +2512,14 @@
       "note": "予算外の参考。土地117.88㎡と広い2階建。南側3.8mの私道に接道／10/19 三井のリハウスの詳細で駐車2台（車種による）と判明。備考に「建築基準法上の道路に接しておらず、43条2項2号の許可が必要」とあるので要確認",
       "grade": null,
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "active": true,
       "missed": 0
     },
     {
       "grade": "○",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-02",
@@ -2534,7 +2558,7 @@
     {
       "grade": null,
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-02",
@@ -2581,7 +2605,7 @@
     {
       "grade": null,
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-02",
@@ -2649,7 +2673,7 @@
       "status": "match",
       "grade": "△",
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-03",
@@ -2703,7 +2727,7 @@
       "note": "エリア外。価格が上限を約500万円超える。角地・2階建てで土地101㎡と広く、ビルトインガレージ付き／10/11 値下げ（7,999→7,699万円・SUUMO「価格更新」10/10・アットホームで確認。HOME'Sは7,999万円のまま）",
       "grade": null,
       "first_seen": "2026-10-04",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "active": true,
       "missed": 0
     },
@@ -2743,7 +2767,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-05",
@@ -2786,7 +2810,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-10-16",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-16",
@@ -2816,12 +2840,16 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21956803/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1136839933/"
         }
       ],
       "status": "match",
       "grade": "○",
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-17",
@@ -2859,12 +2887,16 @@
         {
           "site": "LIFULL HOME'S",
           "url": "https://www.homes.co.jp/kodate/b-1448780016264/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1166445231/"
         }
       ],
       "status": "match",
       "grade": "○",
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-19",
@@ -2898,12 +2930,16 @@
         {
           "site": "LIFULL HOME'S",
           "url": "https://www.homes.co.jp/kodate/b-1473390004461/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1182527634/"
         }
       ],
       "status": "near",
       "grade": null,
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-19",
@@ -2937,12 +2973,16 @@
         {
           "site": "LIFULL HOME'S",
           "url": "https://www.homes.co.jp/kodate/b-1448780016263/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1182527734/"
         }
       ],
       "status": "near",
       "grade": null,
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-19",
@@ -2981,7 +3021,7 @@
       "status": "reference",
       "grade": null,
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-19",
@@ -3020,7 +3060,7 @@
       "status": "match",
       "grade": "△",
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-21",
@@ -3054,6 +3094,10 @@
         {
           "site": "LIFULL HOME'S",
           "url": "https://www.homes.co.jp/kodate/b-1373810001085/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1182637934/"
         }
       ],
       "status": "near",
@@ -3066,7 +3110,7 @@
       "note": "価格が7,500万円を少し超える（惜しい）。延床125㎡は1階車庫10.93㎡を含む（居住部分は約114㎡）。土地74㎡・3階建て・南側4.5m道路。ハウスプラザ扱い",
       "grade": null,
       "first_seen": "2026-10-23",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "active": true,
       "missed": 0
     },
@@ -3093,6 +3137,14 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21997596/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1182638034/"
+        },
+        {
+          "site": "住宅情報館",
+          "url": "https://www.jutakujohokan.co.jp/ikkodate/detail/50322015/"
         }
       ],
       "status": "near",
@@ -3105,14 +3157,14 @@
       "note": "延床105㎡で110㎡に少し届かない（惜しい）。土地105㎡（31.7坪）と広い2階建て・5LDK（ハウスプラザ掲載は4LDK+納戸表記）。価格に余裕。エリア外（鹿骨の西隣・篠崎公園の近く）。駐車台数は要確認",
       "grade": null,
       "first_seen": "2026-10-23",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "active": true,
       "missed": 0
     },
     {
       "grade": "○",
       "first_seen": "2026-10-24",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-24",
@@ -3147,7 +3199,7 @@
     {
       "grade": null,
       "first_seen": "2026-10-24",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-24",
@@ -3186,7 +3238,7 @@
     {
       "grade": null,
       "first_seen": "2026-10-24",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-24",
@@ -3221,6 +3273,10 @@
         {
           "site": "SUUMO",
           "url": "https://suumo.jp/ikkodate/tokyo/sc_edogawa/nc_21894941/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1021485491/"
         }
       ],
       "status": "near",
@@ -3229,7 +3285,7 @@
     {
       "grade": null,
       "first_seen": "2026-10-24",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-24",
@@ -3268,7 +3324,7 @@
     {
       "grade": null,
       "first_seen": "2026-10-24",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-24",
@@ -3328,7 +3384,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-10-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-25",
@@ -3363,7 +3419,7 @@
       "status": "match",
       "grade": "△",
       "first_seen": "2026-10-25",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-25",
@@ -3397,12 +3453,16 @@
         {
           "site": "LIFULL HOME'S",
           "url": "https://www.homes.co.jp/kodate/b-1373810001089/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1182825034/"
         }
       ],
       "status": "match",
       "grade": "○",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-27",
@@ -3436,12 +3496,16 @@
         {
           "site": "LIFULL HOME'S",
           "url": "https://www.homes.co.jp/kodate/b-17020970043946/"
+        },
+        {
+          "site": "アットホーム",
+          "url": "https://www.athome.co.jp/kodate/1136885433/"
         }
       ],
       "status": "near",
       "grade": null,
       "first_seen": "2026-10-27",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-27",
@@ -3476,7 +3540,7 @@
       "status": "match",
       "grade": "○",
       "first_seen": "2026-10-28",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "price_history": [
         {
           "date": "2026-10-28",
@@ -3486,6 +3550,111 @@
       "active": true,
       "missed": 0,
       "note": "10/27公開の新着。3階建・角地・LDK21.3帖・床暖房。延床118.55㎡でほぼ理想、価格も7,000万円以内。エリア外（鹿骨の北隣）"
+    },
+    {
+      "id": "matsushima2-112",
+      "address": "東京都江戸川区松島2丁目",
+      "town": "松島",
+      "zone": "other",
+      "lat": 35.70531,
+      "lng": 139.860621,
+      "price_man": 6980,
+      "building_m2": 112.62,
+      "land_m2": 71.13,
+      "layout": "4LDK",
+      "parking": "1台（無料）",
+      "access": "JR総武線 新小岩駅 徒歩17分",
+      "bus": null,
+      "completion": "2026年7月（完成済・即入居可）",
+      "sources": [
+        {
+          "site": "LIFULL HOME'S",
+          "url": "https://www.homes.co.jp/kodate/b-1485480000249/"
+        }
+      ],
+      "status": "match",
+      "note": "10/30 新着。7,000万円以内・延床112㎡・駐車1台。同じ分譲地（SUUMO nc_22018125・全7戸）の別棟とみられる。HOME'Sの別掲載（b-1582270000029 6,980万円／b-17039160000320 7,180万円）では2SLDK表記で、間取りは要確認。エリア外",
+      "grade": "○",
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "active": true,
+      "missed": 0,
+      "price_history": [
+        {
+          "date": "2026-10-30",
+          "price_man": 6980
+        }
+      ]
+    },
+    {
+      "id": "kamishinozaki1-121",
+      "address": "東京都江戸川区上篠崎1丁目",
+      "town": "上篠崎",
+      "zone": "first",
+      "lat": 35.715667,
+      "lng": 139.901647,
+      "price_man": 6280,
+      "building_m2": 121.28,
+      "land_m2": 70.32,
+      "layout": "4LDK",
+      "parking": "ビルトインガレージ（台数不明）",
+      "access": "都営新宿線 篠崎駅 徒歩13分",
+      "bus": "小岩駅・京成江戸川駅からバス「浅間神社」停 徒歩7分",
+      "completion": "2024年3月築（中古）",
+      "sources": [
+        {
+          "site": "SUUMO",
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_edogawa/nc_21644739/"
+        }
+      ],
+      "status": "match",
+      "note": "10/30 新着。中古（築2年弱・木造3階）。延床121㎡で6,280万円。南8m・西8mの角地、私道負担なし。駐車場は物件PR文の記載のみで台数要確認",
+      "grade": "◎",
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "active": true,
+      "missed": 0,
+      "price_history": [
+        {
+          "date": "2026-10-30",
+          "price_man": 6280
+        }
+      ]
+    },
+    {
+      "id": "shinozaki3-114",
+      "address": "東京都江戸川区篠崎町3丁目",
+      "town": "篠崎町",
+      "zone": "first",
+      "lat": 35.703352,
+      "lng": 139.914174,
+      "price_man": 6800,
+      "building_m2": 114.46,
+      "land_m2": 70.06,
+      "layout": "4LDK",
+      "parking": "車庫（2台可）",
+      "access": "都営新宿線 篠崎駅 徒歩14分",
+      "bus": null,
+      "completion": "2024年5月築（中古）",
+      "sources": [
+        {
+          "site": "SUUMO",
+          "url": "https://suumo.jp/chukoikkodate/tokyo/sc_edogawa/nc_20354273/"
+        }
+      ],
+      "status": "match",
+      "note": "10/30 新着。中古（築2年半・注文住宅・木造3階）。角地、駐車2台、大型ルーフバルコニー",
+      "grade": "○",
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "active": true,
+      "missed": 0,
+      "price_history": [
+        {
+          "date": "2026-10-30",
+          "price_man": 6800
+        }
+      ]
     }
   ],
   "ended": [
