@@ -62,6 +62,7 @@ Claude Code のルーチンから「CLAUDE.md の日次更新ルーチンを実�
   | 北篠崎 | 13C7EB797B |
   | 鹿骨町 | 13C7EB78E8 |
   | 中央 | 13C7EB78EC |
+  | 北小岩 | 13C7EB78C9 |
 
 - 区全体の一覧 `https://www.homes.co.jp/kodate/shinchiku/tokyo/edogawa-city/list/`（`?page=2` 以降でページ送り。1〜3ページ）
 - 条件に合いそうな物件は個別ページ（`https://www.homes.co.jp/kodate/b-…`）を開いて、駐車場・土地面積・間取り・完成時期を確認する
